@@ -232,6 +232,7 @@
                             </div>
                         </div>
                         </a>
+                        
                         <!-- Product 2 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
