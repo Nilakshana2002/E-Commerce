@@ -58,7 +58,7 @@ session_start();
   <!-- Page Header -->
   <section class="bg-amber-600 py-8">
       <div class="container mx-auto px-4">
-          <h1 class="text-3xl font-bold text-white text-center">Categories</h1>
+          <h1 class="text-3xl font-bold text-black text-center">Categories</h1>
           <div class="flex justify-center mt-2">
               <nav class="flex" aria-label="Breadcrumb">
                   <ol class="flex items-center space-x-2 text-white">

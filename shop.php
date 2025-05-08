@@ -199,6 +199,7 @@
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Product 1 -->
+                         <a href = "product-details.php?id=1">
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
                                 <img src="images/products/product-1.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
@@ -230,7 +231,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+                        </a>
                         <!-- Product 2 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
