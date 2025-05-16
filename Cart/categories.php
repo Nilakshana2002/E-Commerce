@@ -53,7 +53,7 @@ session_start();
 </head>
 <body class="font-sans bg-gray-50">
   <!-- Header -->
-  <?php include 'header.php'; ?>
+  <?php include '../Components/header.php'; ?>
 
   <!-- Page Header -->
   <section class="bg-amber-600 py-8">
@@ -531,7 +531,7 @@ session_start();
   </section>
 
   <!-- Footer -->
-  <?php include 'footer.php'; ?>
+  <?php include '../Components/footer.php'; ?>
 
   <script src="script.js"></script>
 </body>
