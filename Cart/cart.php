@@ -52,7 +52,7 @@ session_start();
 </head>
 <body class="font-sans bg-gray-50">
   <!-- Header (same as categories.html, omitted for brevity) -->
-  <?php include 'header.php'; ?>
+  <?php include '../Components/header.php'; ?>
 
   <!-- Cart Section -->
   <section class="py-12 bg-gray-50">
@@ -121,6 +121,6 @@ session_start();
   </section>
 
   <!-- Footer (same as categories.html, omitted for brevity) -->
-  <?php include 'footer.php'; ?>
+  <?php include '../Components/footer.php'; ?>
 </body>
 </html>

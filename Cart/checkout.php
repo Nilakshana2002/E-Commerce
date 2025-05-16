@@ -69,7 +69,7 @@ foreach ($_SESSION['cart'] as $item) {
     <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body class="font-sans bg-gray-50">
-    <?php include 'header.php'; ?>
+    <?php include '../Components/header.php'; ?>
 
     <section class="py-12">
         <div class="container mx-auto px-4">
@@ -119,7 +119,7 @@ foreach ($_SESSION['cart'] as $item) {
         </div>
     </section>
 
-    <?php include 'footer.php'; ?>
+    <?php include '../Components/footer.php'; ?>
 
     <script>
     const stripe = Stripe('pk_test_your_publishable_key');

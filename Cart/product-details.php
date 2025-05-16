@@ -75,7 +75,7 @@ $conn->close();
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans bg-gray-50">
-    <?php include 'header.php'; ?>
+    <?php include '../Components/header.php'; ?>
 
     <section class="py-12">
         <div class="container mx-auto px-4">
@@ -129,7 +129,7 @@ $conn->close();
         </div>
     </section>
 
-    <?php include 'footer.php'; ?>
+    <?php include '../Components/footer.php'; ?>
     <script src="script.js"></script>
 </body>
 </html>
