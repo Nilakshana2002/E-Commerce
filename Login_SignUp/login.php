@@ -44,7 +44,7 @@
        <div class="container main-contain">
         <div class="row gy-5">
           <div class="col-12 text-center">
-            <h2>Sign In to -----------</h2>
+            <h2>Sign In to Sweet Delights  <text x="30" y="35" font-family="Arial" font-size="24" fill="#d97706">🍰</text></h2>
           </div>
           <div class="col-12 text-center">
             <form action="Valid.php" class="row g-3 needs-validation" method="post"  novalidate>
