@@ -136,7 +136,7 @@
                          <a href = "product-details.php?id=1">
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-1.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/truffle cake.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
                                 <div class="absolute top-4 right-4">
                                     <span class="bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full">Bestseller</span>
                                 </div>
@@ -170,7 +170,7 @@
                         <!-- Product 2 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-2.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/red velvet cake.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold mb-2">Red Velvet Cake</h3>
@@ -200,7 +200,7 @@
                         <!-- Product 3 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-3.jpg" alt="Blueberry Cheesecake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/cheese cake.jpg" alt="Blueberry Cheesecake" class="w-full h-64 object-cover">
                                 <div class="absolute top-4 right-4">
                                     <span class="bg-green-600 text-white text-sm font-medium px-3 py-1 rounded-full">New</span>
                                 </div>
@@ -233,7 +233,7 @@
                         <!-- Product 4 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-4.jpg" alt="Vanilla Buttercream Cake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/buttercream cake.jpg" alt="Vanilla Buttercream Cake" class="w-full h-64 object-cover">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold mb-2">Vanilla Buttercream Cake</h3>
@@ -263,7 +263,7 @@
                         <!-- Product 5 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-5.jpg" alt="Fruit Gateau" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/fruite gateau.jpg" alt="Fruit Gateau" class="w-full h-64 object-cover">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold mb-2">Fruit Gateau</h3>
@@ -293,7 +293,7 @@
                         <!-- Product 6 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-6.jpg" alt="Chocolate Mousse Cake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/chocolate mousse cake.jpg" alt="Chocolate Mousse Cake" class="w-full h-64 object-cover">
                                 <div class="absolute top-4 right-4">
                                     <span class="bg-red-600 text-white text-sm font-medium px-3 py-1 rounded-full">Sale</span>
                                 </div>
