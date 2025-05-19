@@ -64,7 +64,7 @@
                   </a>
                   <a href="../Cart/cart.php" class="text-gray-700 hover:text-amber-600 transition relative">
                       <i class="fas fa-shopping-bag text-xl"></i>
-                      <span class="absolute -top-2 -right-2 bg-amber-600 text-black text-xs rounded-full h-5 w-5 flex items-center justify-center"><?php echo $cartcount; ?></span>
+                      <span class="absolute -top-3 -right-2 bg-amber-600 text-black text-xs rounded-full h-5 w-5 flex items-center justify-center"><?php echo $cartcount; ?></span>
                   </a>
                   <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-amber-600 transition">
                       <i class="fas fa-bars text-2xl"></i>
