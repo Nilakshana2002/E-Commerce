@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,15 +15,7 @@
   <!-- Announcement Bar -->
 
 
- <div id="header"></div>
-
-<script>
-  fetch('../Components/header.php')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('header').innerHTML = data;
-    });
-</script>
+<?php include '../Components/header.php'; ?>
 
   <!-- Page Header -->
   <section class="bg-amber-600 py-8">

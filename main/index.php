@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter");
@@ -125,15 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <body class="font-sans bg-gray-50">
 
 <!-- Load header using JS -->
-<div id="header"></div>
-
-<script>
-  fetch('../Components/header.php')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('header').innerHTML = data;
-    });
-</script>
+ <?php include '../Components/header.php'; ?>
 
 
 

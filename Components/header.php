@@ -1,5 +1,5 @@
  <?php
-    $cartcount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
+    $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 ?>
 <!-- Top Banner -->
 <!--<div class="bg-amber-800 text-white text-center py-2 text-sm">
@@ -27,7 +27,7 @@
 <nav class="hidden md:block">
     <ul class="flex space-x-1">
         <li class="nav-item">
-            <a href="../main/index.html" class="nav-link <?= $current_page == 'index.html' ? 'text-amber-600 font-semibold' : 'text-gray-700' ?>">Home</a>
+            <a href="../main/index.php" class="nav-link <?= $current_page == 'index.html' ? 'text-amber-600 font-semibold' : 'text-gray-700' ?>">Home</a>
         </li>
         <li class="nav-item">
             <a href="../Cart/shop-template.php" class="nav-link <?= $current_page == 'shop-template.php' ? 'text-amber-600 font-semibold' : 'text-gray-700' ?>">Shop</a>
@@ -44,10 +44,10 @@
             </div>
         </li>
         <li class="nav-item">
-            <a href="../main/about.html" class="nav-link <?= $current_page == 'about.html' ? 'text-amber-600 font-semibold' : 'text-gray-700' ?>">About Us</a>
+            <a href="../main/about.php" class="nav-link <?= $current_page == 'about.html' ? 'text-amber-600 font-semibold' : 'text-gray-700' ?>">About Us</a>
         </li>
         <li class="nav-item">
-            <a href="../main/contact.html" class="nav-link <?= $current_page == 'contact.html' ? 'text-amber-600 font-semibold' : 'text-gray-700' ?>">Contact</a>
+            <a href="../main/contact.php" class="nav-link <?= $current_page == 'contact.html' ? 'text-amber-600 font-semibold' : 'text-gray-700' ?>">Contact</a>
         </li>
     </ul>
 </nav>
@@ -64,7 +64,7 @@
                   </a>
                   <a href="../Cart/cart.php" class="text-gray-700 hover:text-amber-600 transition relative">
                       <i class="fas fa-shopping-bag text-xl"></i>
-                      <span class="absolute -top-3 -right-2 bg-amber-600 text-black text-xs rounded-full h-5 w-5 flex items-center justify-center"><?php echo $cartcount; ?></span>
+                      <span class="absolute -top-3 -right-2 bg-amber-600 text-black text-xs rounded-full h-5 w-5 flex items-center justify-center"><?php echo $cart_count; ?></span>
                   </a>
                   <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-amber-600 transition">
                       <i class="fas fa-bars text-2xl"></i>
@@ -77,11 +77,11 @@
       <div id="mobile-menu" class="md:hidden bg-white shadow-md hidden">
           <div class="container mx-auto px-4 py-3">
               <nav class="flex flex-col space-y-3">
-                  <a href="index.html" class="text-gray-800 hover:text-amber-600 font-medium transition py-2 border-b border-gray-100">Home</a>
+                  <a href="index.php" class="text-gray-800 hover:text-amber-600 font-medium transition py-2 border-b border-gray-100">Home</a>
                   <a href="../Cart/shop-template.php" class="text-gray-800 hover:text-amber-600 font-medium transition py-2 border-b border-gray-100">Shop</a>
                   <a href="../Cart/categories.php" class="text-gray-800 hover:text-amber-600 font-medium transition py-2 border-b border-gray-100">Categories</a>
-                  <a href="../main/about.html" class="text-gray-800 hover:text-amber-600 font-medium transition py-2 border-b border-gray-100">About Us</a>
-                  <a href="../main/contact.html" class="text-gray-800 hover:text-amber-600 font-medium transition py-2">Contact</a>
+                  <a href="../main/about.php" class="text-gray-800 hover:text-amber-600 font-medium transition py-2 border-b border-gray-100">About Us</a>
+                  <a href="../main/contact.php" class="text-gray-800 hover:text-amber-600 font-medium transition py-2">Contact</a>
               </nav>
           </div>
       </div>
