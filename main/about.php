@@ -17,21 +17,6 @@ session_start();
 
 <?php include '../Components/header.php'; ?>
 
-    <!-- Page Header -->
-    <section class="bg-amber-600 py-12">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl font-bold text-white text-center">About Us</h1>
-            <div class="flex justify-center mt-4">
-                <nav class="flex" aria-label="Breadcrumb">
-                    <ol class="flex items-center space-x-2 text-white">
-                        <li><a href="../main/index.html" class="hover:text-amber-200 transition">Home</a></li>
-                        <li><span class="mx-2">/</span></li>
-                        <li class="font-medium">About Us</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-    </section>
 
     <!-- Our Story Section -->
     <section class="py-16 bg-white">

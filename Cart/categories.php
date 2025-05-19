@@ -55,21 +55,6 @@ session_start();
   <!-- Header -->
   <?php include '../Components/header.php'; ?>
 
-  <!-- Page Header -->
-  <section class="bg-amber-600 py-8">
-      <div class="container mx-auto px-4">
-          <h1 class="text-3xl font-bold text-white text-center">Categories</h1>
-          <div class="flex justify-center mt-2">
-              <nav class="flex" aria-label="Breadcrumb">
-                  <ol class="flex items-center space-x-2 text-white">
-                      <li><a href="index.html" class="hover:text-amber-200 transition">Home</a></li>
-                      <li><span class="mx-2">/</span></li>
-                      <li class="font-medium">Categories</li>
-                  </ol>
-              </nav>
-          </div>
-      </div>
-  </section>
 
   <!-- Categories Navigation -->
   <section class="py-8 bg-white">

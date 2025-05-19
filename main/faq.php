@@ -20,15 +20,8 @@ session_start();
   <!-- Page Header -->
   <section class="bg-amber-600 py-8">
       <div class="container mx-auto px-4">
-          <h1 class="text-3xl font-bold text-white text-center">Frequently Asked Questions</h1>
+          <h1 class="text-3xl font-bold text-center">Frequently Asked Questions</h1>
           <div class="flex justify-center mt-2">
-              <nav class="flex" aria-label="Breadcrumb">
-                  <ol class="flex items-center space-x-2 text-white">
-                      <li><a href="index.html" class="hover:text-amber-200 transition">Home</a></li>
-                      <li><span class="mx-2">/</span></li>
-                      <li class="font-medium">FAQs</li>
-                  </ol>
-              </nav>
           </div>
       </div>
   </section>
