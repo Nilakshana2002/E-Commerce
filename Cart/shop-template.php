@@ -1,4 +1,7 @@
 <?php
+session_start();
+?>
+<?php
 // Include products data
 include '../Cart/products.php';
 

@@ -167,6 +167,7 @@ session_start();
                         </a>
                         
                         <!-- Product 2 -->
+                        <a href = "product-details.php?id=2">
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
                                 <img src="../cart/images/products/red velvet cake.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
@@ -195,7 +196,7 @@ session_start();
                                 </div>
                             </div>
                         </div>
-                        
+                        </a>
                         <!-- Product 3 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
