@@ -132,6 +132,7 @@ session_start();
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Product 1 -->
+                        <a href = "product-details.php?id=1">
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
                                 <img src="../cart/images/products/strawberry-shortcake.jpg" alt="Strawberry Shortcake" class="w-full h-64 object-cover">
@@ -163,8 +164,10 @@ session_start();
                                 </div>
                             </div>
                         </div>
+                        </a>
                         
                         <!-- Product 2 -->
+                         <a href = "product-details.php?id=2">
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
                                 <img src="../cart/images/products/tiramisu.jpg" alt="Tiramisu Cake" class="w-full h-64 object-cover">
@@ -193,6 +196,7 @@ session_start();
                                 </div>
                             </div>
                         </div>
+                        </a>
                         
                         <!-- Product 3 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
