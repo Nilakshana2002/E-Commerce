@@ -93,7 +93,7 @@ session_start();
               <a href="product-details.php?id=1">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
-                          <img src="../main/images/categories/product-1.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/truffle cake.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
                           <div class="absolute top-4 right-4">
                               <span class="bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full">Bestseller</span>
                           </div>
@@ -121,7 +121,7 @@ session_start();
               <a href="product-details.php?id=2">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
-                          <img src="../main/images/categories/product-2.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/red velvet cake.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
                       </div>
                       <div class="p-6">
                           <h3 class="text-xl font-bold mb-2">Red Velvet Cake</h3>
@@ -146,7 +146,7 @@ session_start();
               <a href="product-details.php?id=3">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
-                          <img src="../main/images/categories/product-4.jpg" alt="Vanilla Buttercream Cake" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/buttercream cake.jpg" alt="Vanilla Buttercream Cake" class="w-full h-64 object-cover">
                       </div>
                       <div class="p-6">
                           <h3 class="text-xl font-bold mb-2">Vanilla Buttercream Cake</h3>
