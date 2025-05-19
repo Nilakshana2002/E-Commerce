@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +13,9 @@
 </head>
 <body class="font-sans bg-gray-50">
 
-    <div id="header"></div>
+     
 
-<script>
-  fetch('../Components/header.php')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('header').innerHTML = data;
-    });
-</script>
+<?php include '../Components/header.php'; ?>
 
     <!-- Page Header -->
     <section class="bg-amber-600 py-12">
