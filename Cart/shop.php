@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +12,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans bg-gray-50">
-    <!-- Announcement Bar -->
-    <div class="bg-amber-800 text-white text-center py-2 text-sm">
-        <p>Free delivery on orders above Rs. 5000 in Colombo | Same day delivery for orders before 12 PM</p>
-    </div>
 
     <!-- Header -->
      <?php include '../Components/header.php'; ?>
@@ -136,7 +135,7 @@
                          <a href = "product-details.php?id=1">
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-1.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
+                                <img src="../main/images/products/truffle cake.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
                                 <div class="absolute top-4 right-4">
                                     <span class="bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full">Bestseller</span>
                                 </div>
@@ -170,7 +169,7 @@
                         <!-- Product 2 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-2.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/red velvet cake.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold mb-2">Red Velvet Cake</h3>
@@ -200,7 +199,7 @@
                         <!-- Product 3 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-3.jpg" alt="Blueberry Cheesecake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/cheese cake.jpg" alt="Blueberry Cheesecake" class="w-full h-64 object-cover">
                                 <div class="absolute top-4 right-4">
                                     <span class="bg-green-600 text-white text-sm font-medium px-3 py-1 rounded-full">New</span>
                                 </div>
@@ -233,7 +232,7 @@
                         <!-- Product 4 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-4.jpg" alt="Vanilla Buttercream Cake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/buttercream cake.jpg" alt="Vanilla Buttercream Cake" class="w-full h-64 object-cover">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold mb-2">Vanilla Buttercream Cake</h3>
@@ -263,7 +262,7 @@
                         <!-- Product 5 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-5.jpg" alt="Fruit Gateau" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/fruite gateau.jpg" alt="Fruit Gateau" class="w-full h-64 object-cover">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold mb-2">Fruit Gateau</h3>
@@ -293,7 +292,7 @@
                         <!-- Product 6 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="images/products/product-6.jpg" alt="Chocolate Mousse Cake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/chocolate mousse cake.jpg" alt="Chocolate Mousse Cake" class="w-full h-64 object-cover">
                                 <div class="absolute top-4 right-4">
                                     <span class="bg-red-600 text-white text-sm font-medium px-3 py-1 rounded-full">Sale</span>
                                 </div>
@@ -329,29 +328,46 @@
 
                     <!-- Pagination -->
                     <div class="flex justify-center mt-12">
-                        <nav class="inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
-                            <a href="#" class="inline-flex items-center px-3 py-2 rounded-l-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50">
-                                <i class="fas fa-chevron-left text-xs"></i>
-                            </a>
-                            <a href="#" class="inline-flex items-center px-4 py-2 border border-gray-300 bg-amber-600 text-white hover:bg-amber-700">
-                                1
-                            </a>
-                            <a href="#" class="inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-gray-700 hover:bg-gray-50">
-                                2
-                            </a>
-                            <a href="#" class="inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-gray-700 hover:bg-gray-50">
-                                3
-                            </a>
-                            <span class="inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-gray-700">
-                                ...
-                            </span>
-                            <a href="#" class="inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-gray-700 hover:bg-gray-50">
-                                8
-                            </a>
-                            <a href="#" class="inline-flex items-center px-3 py-2 rounded-r-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50">
-                                <i class="fas fa-chevron-right text-xs"></i>
-                            </a>
-                        </nav>
+                        <?php
+$currentPage = basename($_SERVER['PHP_SELF']); // e.g., shop-2.php
+?>
+
+<nav class="inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+    <!-- Previous -->
+    <a href="../Cart/shop.php" class="inline-flex items-center px-3 py-2 rounded-l-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50">
+        <i class="fas fa-chevron-left text-xs"></i>
+    </a>
+
+    <!-- Page 1 -->
+    <a href="../Cart/shop.php" class="inline-flex items-center px-4 py-2 border border-gray-300 
+        <?= ($currentPage == 'shop.php') ? 'bg-amber-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50' ?>">
+        1
+    </a>
+
+    <!-- Page 2 -->
+    <a href="../Cart/shop-2.php" class="inline-flex items-center px-4 py-2 border border-gray-300 
+        <?= ($currentPage == 'shop-2.php') ? 'bg-amber-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50' ?>">
+        2
+    </a>
+
+    <!-- Page 3 -->
+    <a href="../Cart/shop-3.php" class="inline-flex items-center px-4 py-2 border border-gray-300 
+        <?= ($currentPage == 'shop-3.php') ? 'bg-amber-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50' ?>">
+        3
+    </a>
+
+    <!-- Page 4 -->
+    <a href="../Cart/shop-4.php" class="inline-flex items-center px-4 py-2 border border-gray-300 
+        <?= ($currentPage == 'shop-4.php') ? 'bg-amber-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50' ?>">
+        4
+    </a>
+
+    <!-- Next -->
+    <a href="../Cart/shop-4.php" class="inline-flex items-center px-3 py-2 rounded-r-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50">
+        <i class="fas fa-chevron-right text-xs"></i>
+    </a>
+</nav>
+
                     </div>
                 </div>
             </div>
@@ -423,3 +439,7 @@
             });
         });
     </script>
+      <?php include 'shop-template.php'; ?>
+
+    </body >
+</html >

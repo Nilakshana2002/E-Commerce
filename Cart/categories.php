@@ -93,7 +93,7 @@ session_start();
               <a href="product-details.php?id=1">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
-                          <img src="images/products/product-1.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/truffle cake.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
                           <div class="absolute top-4 right-4">
                               <span class="bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full">Bestseller</span>
                           </div>
@@ -121,7 +121,7 @@ session_start();
               <a href="product-details.php?id=2">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
-                          <img src="images/products/product-2.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/red velvet cake.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
                       </div>
                       <div class="p-6">
                           <h3 class="text-xl font-bold mb-2">Red Velvet Cake</h3>
@@ -146,7 +146,7 @@ session_start();
               <a href="product-details.php?id=3">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
-                          <img src="images/products/product-4.jpg" alt="Vanilla Buttercream Cake" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/buttercream cake.jpg" alt="Vanilla Buttercream Cake" class="w-full h-64 object-cover">
                       </div>
                       <div class="p-6">
                           <h3 class="text-xl font-bold mb-2">Vanilla Buttercream Cake</h3>
@@ -182,7 +182,7 @@ session_start();
               <a href="product-details.php?id=4">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
-                          <img src="images/categories/wedding.jpg" alt="Elegant Tiered Wedding Cake" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/tiered cake.jpg" alt="Elegant Tiered Wedding Cake" class="w-full h-64 object-cover">
                       </div>
                       <div class="p-6">
                           <h3 class="text-xl font-bold mb-2">Elegant Tiered Wedding Cake</h3>
@@ -207,7 +207,7 @@ session_start();
               <a href="product-details.php?id=5">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
-                          <img src="images/products/product-5.jpg" alt="Floral Wedding Cake" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/floral cake.jpg" alt="Floral Wedding Cake" class="w-full h-64 object-cover">
                       </div>
                       <div class="p-6">
                           <h3 class="text-xl font-bold mb-2">Floral Wedding Cake</h3>
@@ -232,7 +232,7 @@ session_start();
               <a href="product-details.php?id=6">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
-                          <img src="images/products/product-6.jpg" alt="Rustic Wedding Cake" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/rustic cake.jpg" alt="Rustic Wedding Cake" class="w-full h-64 object-cover">
                           <div class="absolute top-4 right-4">
                               <span class="bg-green-600 text-white text-sm font-medium px-3 py-1 rounded-full">New</span>
                           </div>
@@ -271,7 +271,7 @@ session_start();
               <a href="product-details.php?id=7">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
-                          <img src="images/categories/cupcakes.jpg" alt="Assorted Cupcakes" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/assorted cupcake.jpg" alt="Assorted Cupcakes" class="w-full h-64 object-cover">
                           <div class="absolute top-4 right-4">
                               <span class="bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full">Bestseller</span>
                           </div>
@@ -299,7 +299,7 @@ session_start();
               <a href="product-details.php?id=8">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
-                          <img src="images/products/product-3.jpg" alt="Chocolate Cupcakes" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/c cupcakes.jpg" alt="Chocolate Cupcakes" class="w-full h-64 object-cover">
                       </div>
                       <div class="p-6">
                           <h3 class="text-xl font-bold mb-2">Chocolate Cupcakes (Box of 6)</h3>
@@ -324,7 +324,7 @@ session_start();
               <a href="product-details.php?id=9">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
-                          <img src="images/products/product-2.jpg" alt="Red Velvet Cupcakes" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/red velvet cupcake.jpg" alt="Red Velvet Cupcakes" class="w-full h-64 object-cover">
                           <div class="absolute top-4 right-4">
                               <span class="bg-red-600 text-white text-sm font-medium px-3 py-1 rounded-full">Sale</span>
                           </div>
@@ -366,7 +366,7 @@ session_start();
               <a href="product-details.php?id=10">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
-                          <img src="images/categories/pastries.jpg" alt="Chocolate Eclairs" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/eclairs.jpg" alt="Chocolate Eclairs" class="w-full h-64 object-cover">
                       </div>
                       <div class="p-6">
                           <h3 class="text-xl font-bold mb-2">Chocolate Eclairs (Box of 4)</h3>
@@ -391,7 +391,7 @@ session_start();
               <a href="product-details.php?id=11">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
-                          <img src="images/products/product-4.jpg" alt="Fruit Tarts" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/fruit tarts.jpg" alt="Fruit Tarts" class="w-full h-64 object-cover">
                           <div class="absolute top-4 right-4">
                               <span class="bg-green-600 text-white text-sm font-medium px-3 py-1 rounded-full">New</span>
                           </div>
@@ -419,7 +419,7 @@ session_start();
               <a href="product-details.php?id=12">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
-                          <img src="images/products/product-5.jpg" alt="Croissants" class="w-full h-64 object-cover">
+                          <img src="../main/images/categories/butter.jpg" alt="Croissants" class="w-full h-64 object-cover">
                           <div class="absolute top-4 right-4">
                               <span class="bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full">Bestseller</span>
                           </div>
