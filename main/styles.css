@@ -83,6 +83,7 @@
   background-color: #d97706; /* amber-600 */
 }
 
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -113,20 +114,6 @@ html {
   transition: transform 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero-slider {
-    height: 250px;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-slider {
-    height: 200px;
-  }
-}
-
-
 .hero-slider {
   height: 600px; /* Set your desired fixed height */
   position: relative;
@@ -136,10 +123,13 @@ html {
   height: 100%; /* Make each slide fill the hero-slider */
 }
 
-.hero-slider .slides img {
-  height: 100%;   /* Make image fill the slide */
-  width: 100%;
-  object-fit: cover;
-  filter: brightness(0.9);
+
+.hero-slider .slides {
+  display: flex;
+  transition: transform 0.2s ease-in-out; /* or 100% * total number of slides */
 }
 
+.hero-slider .slide {
+  flex-shrink: 0;
+  width: 100%;
+}
