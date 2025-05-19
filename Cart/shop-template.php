@@ -73,15 +73,8 @@ $currentFile = basename($_SERVER['PHP_SELF']);
     <!-- Page Header -->
     <section class="bg-amber-600 py-12">
         <div class="container mx-auto px-4">
-            <h1 class="text-4xl font-bold text-white text-center">Shop</h1>
             <div class="flex justify-center mt-4">
-                <nav class="flex" aria-label="Breadcrumb">
-                    <ol class="flex items-center space-x-2 text-white">
-                        <li><a href="index.html" class="hover:text-amber-200 transition">Home</a></li>
-                        <li><span class="mx-2">/</span></li>
-                        <li class="font-medium">Shop</li>
-                    </ol>
-                </nav>
+
             </div>
         </div>
     </section>
@@ -118,19 +111,7 @@ $currentFile = basename($_SERVER['PHP_SELF']);
                             </ul>
                         </div>
 
-                        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-                            <h3 class="text-xl font-bold mb-4">Price Range</h3>
-                            <div class="space-y-4">
-                                <input type="range" min="500" max="10000" value="<?php echo htmlspecialchars($max_price); ?>" class="w-full" id="price-range" name="max_price">
-                                <div class="flex justify-between">
-                                    <span class="text-gray-600">Rs. 500</span>
-                                    <span class="text-gray-600">Rs. 10,000</span>
-                                </div>
-                                <div class="text-center text-amber-600 font-medium" id="price-display">Rs. <?php echo htmlspecialchars($max_price); ?></div>
-                                <input type="hidden" name="min_price" value="500">
-                                <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-medium py-2 px-4 rounded-lg w-full transition">Apply Filter</button>
-                            </div>
-                        </div>
+
 
                         <div class="bg-white p-6 rounded-lg shadow-md mb-6">
                             <h3 class="text-xl font-bold mb-4">Special Offers</h3>

@@ -55,7 +55,7 @@ session_start();
   <!-- Header -->
   <?php include '../Components/header.php'; ?>
 
-  <!-- Page Header -->
+  
    
 
   <!-- Categories Navigation -->

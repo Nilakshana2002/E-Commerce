@@ -69,11 +69,11 @@
             <div>
                 <h3 class="text-xl font-bold mb-6">Categories</h3>
                 <ul class="space-y-3">
-                    <li><a href="categories.html#birthday" class="text-gray-400 hover:text-white transition">Birthday Cakes</a></li>
-                    <li><a href="categories.html#wedding" class="text-gray-400 hover:text-white transition">Wedding Cakes</a></li>
-                    <li><a href="categories.html#cupcakes" class="text-gray-400 hover:text-white transition">Cupcakes</a></li>
-                    <li><a href="categories.html#pastries" class="text-gray-400 hover:text-white transition">Pastries</a></li>
-                    <li><a href="categories.html#custom" class="text-gray-400 hover:text-white transition">Custom Cakes</a></li>
+                    <li><a href="../Cart/categories.php#birthday" class="text-gray-400 hover:text-white transition">Birthday Cakes</a></li>
+                    <li><a href="../Cart/categories.php#wedding" class="text-gray-400 hover:text-white transition">Wedding Cakes</a></li>
+                    <li><a href="../Cart/categories.php#cupcakes" class="text-gray-400 hover:text-white transition">Cupcakes</a></li>
+                    <li><a href="../Cart/categories.php#pastries" class="text-gray-400 hover:text-white transition">Pastries</a></li>
+                    <li><a href="../Cart/categories.php#custom" class="text-gray-400 hover:text-white transition">Custom Cakes</a></li>
                 </ul>
             </div>
             <div>
