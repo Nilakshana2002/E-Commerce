@@ -129,47 +129,45 @@
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Product 1 -->
-                         <a href = "product-details.php?id=1">
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="../cart/images/products/truffle cake.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
-                                <div class="absolute top-4 right-4">
-                                    <span class="bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full">Bestseller</span>
-                                </div>
+                                <img src="../cart/images/products/croissants.jpg" alt="Butter Croissants (6 pcs)" class="w-full h-64 object-cover">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Chocolate Truffle Cake</h3>
+                                <h3 class="text-xl font-bold mb-2">Butter Croissants (6 pcs)</h3>
                                 <div class="flex items-center mb-4">
                                     <div class="flex text-amber-400">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
                                     </div>
-                                    <span class="text-gray-600 text-sm ml-2">(42 reviews)</span>
+                                    <span class="text-gray-600 text-sm ml-2">(33 reviews)</span>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xl font-bold">Rs. 3,500</span>
+                                    <span class="text-xl font-bold">Rs. 1,200</span>
                                     <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition" 
-                                            data-id="1" 
-                                            data-name="Chocolate Truffle Cake" 
-                                            data-price="3500"
-                                            data-image="images/products/product-1.jpg">
+                                            data-id="19" 
+                                            data-name="Butter Croissants (6 pcs)" 
+                                            data-price="1200"
+                                            data-image="images/products/croissants.jpg">
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        </a>
                         
                         <!-- Product 2 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="../cart/images/products/red velvet cake.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/cinnamon-rolls.jpg" alt="Cinnamon Rolls (4 pcs)" class="w-full h-64 object-cover">
+                                <div class="absolute top-4 right-4">
+                                    <span class="bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full">Bestseller</span>
+                                </div>
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Red Velvet Cake</h3>
+                                <h3 class="text-xl font-bold mb-2">Cinnamon Rolls (4 pcs)</h3>
                                 <div class="flex items-center mb-4">
                                     <div class="flex text-amber-400">
                                         <i class="fas fa-star"></i>
@@ -178,15 +176,15 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <span class="text-gray-600 text-sm ml-2">(38 reviews)</span>
+                                    <span class="text-gray-600 text-sm ml-2">(48 reviews)</span>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xl font-bold">Rs. 3,800</span>
+                                    <span class="text-xl font-bold">Rs. 1,600</span>
                                     <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
-                                            data-id="2"
-                                            data-name="Red Velvet Cake"
-                                            data-price="3800"
-                                            data-image="images/products/product-2.jpg">
+                                            data-id="20"
+                                            data-name="Cinnamon Rolls (4 pcs)"
+                                            data-price="1600"
+                                            data-image="images/products/cinnamon-rolls.jpg">
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
                                 </div>
@@ -196,30 +194,27 @@
                         <!-- Product 3 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="../cart/images/products/cheese cake.jpg" alt="Blueberry Cheesecake" class="w-full h-64 object-cover">
-                                <div class="absolute top-4 right-4">
-                                    <span class="bg-green-600 text-white text-sm font-medium px-3 py-1 rounded-full">New</span>
-                                </div>
+                                <img src="../cart/images/products/apple-pie.jpg" alt="Apple Pie" class="w-full h-64 object-cover">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Blueberry Cheesecake</h3>
+                                <h3 class="text-xl font-bold mb-2">Apple Pie</h3>
                                 <div class="flex items-center mb-4">
                                     <div class="flex text-amber-400">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
                                     </div>
-                                    <span class="text-gray-600 text-sm ml-2">(24 reviews)</span>
+                                    <span class="text-gray-600 text-sm ml-2">(39 reviews)</span>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xl font-bold">Rs. 4,200</span>
+                                    <span class="text-xl font-bold">Rs. 2,200</span>
                                     <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
-                                            data-id="3"
-                                            data-name="Blueberry Cheesecake"
-                                            data-price="4200"
-                                            data-image="images/products/product-3.jpg">
+                                            data-id="21"
+                                            data-name="Apple Pie"
+                                            data-price="2200"
+                                            data-image="images/products/apple-pie.jpg">
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
                                 </div>
@@ -229,27 +224,33 @@
                         <!-- Product 4 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="../cart/images/products/buttercream cake.jpg" alt="Vanilla Buttercream Cake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/chocolate-cookies.jpg" alt="Chocolate Chip Cookies (12 pcs)" class="w-full h-64 object-cover">
+                                <div class="absolute top-4 right-4">
+                                    <span class="bg-red-600 text-white text-sm font-medium px-3 py-1 rounded-full">Sale</span>
+                                </div>
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Vanilla Buttercream Cake</h3>
+                                <h3 class="text-xl font-bold mb-2">Chocolate Chip Cookies (12 pcs)</h3>
                                 <div class="flex items-center mb-4">
                                     <div class="flex text-amber-400">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
                                     </div>
-                                    <span class="text-gray-600 text-sm ml-2">(31 reviews)</span>
+                                    <span class="text-gray-600 text-sm ml-2">(41 reviews)</span>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xl font-bold">Rs. 3,200</span>
+                                    <div>
+                                        <span class="text-xl font-bold">Rs. 1,400</span>
+                                        <span class="text-gray-500 line-through ml-2">Rs. 1,800</span>
+                                    </div>
                                     <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
-                                            data-id="4"
-                                            data-name="Vanilla Buttercream Cake"
-                                            data-price="3200"
-                                            data-image="images/products/product-4.jpg">
+                                            data-id="22"
+                                            data-name="Chocolate Chip Cookies (12 pcs)"
+                                            data-price="1400"
+                                            data-image="images/products/chocolate-cookies.jpg">
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
                                 </div>
@@ -259,10 +260,13 @@
                         <!-- Product 5 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="../cart/images/products/fruite gateau.jpg" alt="Fruit Gateau" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/donuts.jpg" alt="Assorted Donuts (6 pcs)" class="w-full h-64 object-cover">
+                                <div class="absolute top-4 right-4">
+                                    <span class="bg-green-600 text-white text-sm font-medium px-3 py-1 rounded-full">New</span>
+                                </div>
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Fruit Gateau</h3>
+                                <h3 class="text-xl font-bold mb-2">Assorted Donuts (6 pcs)</h3>
                                 <div class="flex items-center mb-4">
                                     <div class="flex text-amber-400">
                                         <i class="fas fa-star"></i>
@@ -271,15 +275,15 @@
                                         <i class="fas fa-star"></i>
                                         <i class="far fa-star"></i>
                                     </div>
-                                    <span class="text-gray-600 text-sm ml-2">(19 reviews)</span>
+                                    <span class="text-gray-600 text-sm ml-2">(22 reviews)</span>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xl font-bold">Rs. 3,900</span>
+                                    <span class="text-xl font-bold">Rs. 1,800</span>
                                     <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
-                                            data-id="5"
-                                            data-name="Fruit Gateau"
-                                            data-price="3900"
-                                            data-image="images/products/product-5.jpg">
+                                            data-id="23"
+                                            data-name="Assorted Donuts (6 pcs)"
+                                            data-price="1800"
+                                            data-image="images/products/donuts.jpg">
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
                                 </div>
@@ -289,33 +293,27 @@
                         <!-- Product 6 -->
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="../cart/images/products/chocolate mousse cake.jpg" alt="Chocolate Mousse Cake" class="w-full h-64 object-cover">
-                                <div class="absolute top-4 right-4">
-                                    <span class="bg-red-600 text-white text-sm font-medium px-3 py-1 rounded-full">Sale</span>
-                                </div>
+                                <img src="../cart/images/products/brownies.jpg" alt="Chocolate Brownies (8 pcs)" class="w-full h-64 object-cover">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Chocolate Mousse Cake</h3>
+                                <h3 class="text-xl font-bold mb-2">Chocolate Brownies (8 pcs)</h3>
                                 <div class="flex items-center mb-4">
                                     <div class="flex text-amber-400">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
                                     </div>
-                                    <span class="text-gray-600 text-sm ml-2">(47 reviews)</span>
+                                    <span class="text-gray-600 text-sm ml-2">(36 reviews)</span>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <div>
-                                        <span class="text-xl font-bold">Rs. 3,600</span>
-                                        <span class="text-gray-500 line-through ml-2">Rs. 4,200</span>
-                                    </div>
+                                    <span class="text-xl font-bold">Rs. 1,900</span>
                                     <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
-                                            data-id="6"
-                                            data-name="Chocolate Mousse Cake"
-                                            data-price="3600"
-                                            data-image="images/products/product-6.jpg">
+                                            data-id="24"
+                                            data-name="Chocolate Brownies (8 pcs)"
+                                            data-price="1900"
+                                            data-image="images/products/brownies.jpg">
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
                                 </div>
@@ -325,7 +323,7 @@
 
                     <!-- Pagination -->
                     <div class="flex justify-center mt-12">
-                        <?php
+                       <?php
 $currentPage = basename($_SERVER['PHP_SELF']); // e.g., shop-2.php
 ?>
 
@@ -436,7 +434,6 @@ $currentPage = basename($_SERVER['PHP_SELF']); // e.g., shop-2.php
             });
         });
     </script>
-      <?php include 'shop-template.php'; ?>
-
-    </body >
-</html >
+          <?php include '../Cart/shop-template.php'; ?>
+</body>
+</html>

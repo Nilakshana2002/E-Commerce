@@ -129,16 +129,174 @@
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Product 1 -->
-                         <a href = "product-details.php?id=1">
                         <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                             <div class="relative">
-                                <img src="../cart/images/products/truffle cake.jpg" alt="Chocolate Truffle Cake" class="w-full h-64 object-cover">
+                                <img src="../cart/images/products/mango-cake.jpg" alt="Mango Passion Cake" class="w-full h-64 object-cover">
+                                <div class="absolute top-4 right-4">
+                                    <span class="bg-green-600 text-white text-sm font-medium px-3 py-1 rounded-full">New</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Mango Passion Cake</h3>
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-amber-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm ml-2">(18 reviews)</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xl font-bold">Rs. 4,500</span>
+                                    <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition" 
+                                            data-id="13" 
+                                            data-name="Mango Passion Cake" 
+                                            data-price="4500"
+                                            data-image="images/products/mango-cake.jpg">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 2 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                            <div class="relative">
+                                <img src="../cart/images/products/chocolate-cupcakes.jpg" alt="Chocolate Cupcakes (6 pcs)" class="w-full h-64 object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Chocolate Cupcakes (6 pcs)</h3>
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-amber-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm ml-2">(45 reviews)</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xl font-bold">Rs. 1,800</span>
+                                    <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
+                                            data-id="14"
+                                            data-name="Chocolate Cupcakes (6 pcs)"
+                                            data-price="1800"
+                                            data-image="images/products/chocolate-cupcakes.jpg">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 3 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                            <div class="relative">
+                                <img src="../cart/images/products/vanilla-cupcakes.jpg" alt="Vanilla Cupcakes (6 pcs)" class="w-full h-64 object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Vanilla Cupcakes (6 pcs)</h3>
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-amber-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm ml-2">(37 reviews)</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xl font-bold">Rs. 1,600</span>
+                                    <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
+                                            data-id="15"
+                                            data-name="Vanilla Cupcakes (6 pcs)"
+                                            data-price="1600"
+                                            data-image="images/products/vanilla-cupcakes.jpg">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 4 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                            <div class="relative">
+                                <img src="../cart/images/products/rainbow-cake.jpg" alt="Rainbow Layer Cake" class="w-full h-64 object-cover">
                                 <div class="absolute top-4 right-4">
                                     <span class="bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full">Bestseller</span>
                                 </div>
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Chocolate Truffle Cake</h3>
+                                <h3 class="text-xl font-bold mb-2">Rainbow Layer Cake</h3>
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-amber-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm ml-2">(56 reviews)</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xl font-bold">Rs. 4,800</span>
+                                    <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
+                                            data-id="16"
+                                            data-name="Rainbow Layer Cake"
+                                            data-price="4800"
+                                            data-image="images/products/rainbow-cake.jpg">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 5 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                            <div class="relative">
+                                <img src="../cart/images/products/chocolate-eclairs.jpg" alt="Chocolate Eclairs (4 pcs)" class="w-full h-64 object-cover">
+                                <div class="absolute top-4 right-4">
+                                    <span class="bg-red-600 text-white text-sm font-medium px-3 py-1 rounded-full">Sale</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Chocolate Eclairs (4 pcs)</h3>
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-amber-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm ml-2">(29 reviews)</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <span class="text-xl font-bold">Rs. 1,400</span>
+                                        <span class="text-gray-500 line-through ml-2">Rs. 1,800</span>
+                                    </div>
+                                    <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
+                                            data-id="17"
+                                            data-name="Chocolate Eclairs (4 pcs)"
+                                            data-price="1400"
+                                            data-image="images/products/chocolate-eclairs.jpg">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 6 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                            <div class="relative">
+                                <img src="../cart/images/products/macarons.jpg" alt="Assorted Macarons (12 pcs)" class="w-full h-64 object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Assorted Macarons (12 pcs)</h3>
                                 <div class="flex items-center mb-4">
                                     <div class="flex text-amber-400">
                                         <i class="fas fa-star"></i>
@@ -150,172 +308,12 @@
                                     <span class="text-gray-600 text-sm ml-2">(42 reviews)</span>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xl font-bold">Rs. 3,500</span>
-                                    <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition" 
-                                            data-id="1" 
-                                            data-name="Chocolate Truffle Cake" 
-                                            data-price="3500"
-                                            data-image="images/products/product-1.jpg">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        
-                        <!-- Product 2 -->
-                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                            <div class="relative">
-                                <img src="../cart/images/products/red velvet cake.jpg" alt="Red Velvet Cake" class="w-full h-64 object-cover">
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Red Velvet Cake</h3>
-                                <div class="flex items-center mb-4">
-                                    <div class="flex text-amber-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <span class="text-gray-600 text-sm ml-2">(38 reviews)</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-xl font-bold">Rs. 3,800</span>
+                                    <span class="text-xl font-bold">Rs. 2,400</span>
                                     <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
-                                            data-id="2"
-                                            data-name="Red Velvet Cake"
-                                            data-price="3800"
-                                            data-image="images/products/product-2.jpg">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Product 3 -->
-                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                            <div class="relative">
-                                <img src="../cart/images/products/cheese cake.jpg" alt="Blueberry Cheesecake" class="w-full h-64 object-cover">
-                                <div class="absolute top-4 right-4">
-                                    <span class="bg-green-600 text-white text-sm font-medium px-3 py-1 rounded-full">New</span>
-                                </div>
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Blueberry Cheesecake</h3>
-                                <div class="flex items-center mb-4">
-                                    <div class="flex text-amber-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                    <span class="text-gray-600 text-sm ml-2">(24 reviews)</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-xl font-bold">Rs. 4,200</span>
-                                    <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
-                                            data-id="3"
-                                            data-name="Blueberry Cheesecake"
-                                            data-price="4200"
-                                            data-image="images/products/product-3.jpg">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Product 4 -->
-                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                            <div class="relative">
-                                <img src="../cart/images/products/buttercream cake.jpg" alt="Vanilla Buttercream Cake" class="w-full h-64 object-cover">
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Vanilla Buttercream Cake</h3>
-                                <div class="flex items-center mb-4">
-                                    <div class="flex text-amber-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <span class="text-gray-600 text-sm ml-2">(31 reviews)</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-xl font-bold">Rs. 3,200</span>
-                                    <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
-                                            data-id="4"
-                                            data-name="Vanilla Buttercream Cake"
-                                            data-price="3200"
-                                            data-image="images/products/product-4.jpg">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Product 5 -->
-                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                            <div class="relative">
-                                <img src="../cart/images/products/fruite gateau.jpg" alt="Fruit Gateau" class="w-full h-64 object-cover">
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Fruit Gateau</h3>
-                                <div class="flex items-center mb-4">
-                                    <div class="flex text-amber-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                    <span class="text-gray-600 text-sm ml-2">(19 reviews)</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-xl font-bold">Rs. 3,900</span>
-                                    <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
-                                            data-id="5"
-                                            data-name="Fruit Gateau"
-                                            data-price="3900"
-                                            data-image="images/products/product-5.jpg">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Product 6 -->
-                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                            <div class="relative">
-                                <img src="../cart/images/products/chocolate mousse cake.jpg" alt="Chocolate Mousse Cake" class="w-full h-64 object-cover">
-                                <div class="absolute top-4 right-4">
-                                    <span class="bg-red-600 text-white text-sm font-medium px-3 py-1 rounded-full">Sale</span>
-                                </div>
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-xl font-bold mb-2">Chocolate Mousse Cake</h3>
-                                <div class="flex items-center mb-4">
-                                    <div class="flex text-amber-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <span class="text-gray-600 text-sm ml-2">(47 reviews)</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <div>
-                                        <span class="text-xl font-bold">Rs. 3,600</span>
-                                        <span class="text-gray-500 line-through ml-2">Rs. 4,200</span>
-                                    </div>
-                                    <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-2 transition"
-                                            data-id="6"
-                                            data-name="Chocolate Mousse Cake"
-                                            data-price="3600"
-                                            data-image="images/products/product-6.jpg">
+                                            data-id="18"
+                                            data-name="Assorted Macarons (12 pcs)"
+                                            data-price="2400"
+                                            data-image="images/products/macarons.jpg">
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
                                 </div>
@@ -325,7 +323,7 @@
 
                     <!-- Pagination -->
                     <div class="flex justify-center mt-12">
-                        <?php
+                       <?php
 $currentPage = basename($_SERVER['PHP_SELF']); // e.g., shop-2.php
 ?>
 
@@ -436,7 +434,6 @@ $currentPage = basename($_SERVER['PHP_SELF']); // e.g., shop-2.php
             });
         });
     </script>
-      <?php include 'shop-template.php'; ?>
-
-    </body >
-</html >
+          <?php include '../Cart/shop-template.php'; ?>
+</body>
+</html>
