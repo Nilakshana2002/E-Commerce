@@ -155,7 +155,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Birthday Cakes</a>
+              <a href="shop-template.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Birthday Cakes</a>
           </div>
       </div>
   </section>
@@ -244,7 +244,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Wedding Cakes</a>
+              <a href="shop-template.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Wedding Cakes</a>
           </div>
       </div>
   </section>
@@ -339,7 +339,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Cupcakes</a>
+              <a href="shop-template.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Cupcakes</a>
           </div>
       </div>
   </section>
@@ -431,7 +431,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Pastries</a>
+              <a href="shop-template.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Pastries</a>
           </div>
       </div>
   </section>

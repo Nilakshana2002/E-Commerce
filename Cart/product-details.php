@@ -45,7 +45,7 @@ session_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$conn = new mysqli("localhost", "root", "Kali00@#12", "sweet_delights");
+$conn = new mysqli("localhost", "root", "Nilakshana_123@", "sweet_delights");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
