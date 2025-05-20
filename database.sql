@@ -35,12 +35,11 @@ CREATE TABLE users (
 
 -- Sample product data (based on your HTML)
 INSERT INTO products (name, description, price, image, category, rating, reviews, badge) VALUES
-('Chocolate Truffle Cake', 'Rich and indulgent chocolate truffle cake, perfect for birthdays.', 3500.00, 'images/products/product-1.jpg', 'Birthday Cakes', 4.5, 42, 'Bestseller'),
-('Red Velvet Cake', 'Classic red velvet cake with cream cheese frosting.', 3800.00, 'images/products/product-2.jpg', 'Birthday Cakes', 5.0, 38, NULL),
-('Vanilla Buttercream Cake', 'Light and fluffy vanilla cake with buttercream frosting.', 3200.00, 'images/products/product-4.jpg', 'Birthday Cakes', 4.5, 31, NULL),
-('Elegant Tiered Wedding Cake', 'Multi-tiered cake for your special day.', 25000.00, 'images/categories/wedding.jpg', 'Wedding Cakes', 5.0, 52, NULL),
-('Assorted Cupcakes (Box of 6)', 'A delightful mix of flavored cupcakes.', 1800.00, 'images/categories/cupcakes.jpg', 'Cupcakes', 5.0, 64, 'Bestseller'),
-('Chocolate Eclairs (Box of 4)', 'Creamy chocolate-filled eclairs.', 1200.00, 'images/categories/pastries.jpg', 'Pastries', 4.5, 41, NULL);
+('Chocolate Truffle Cake', 'Rich and indulgent chocolate truffle cake, perfect for birthdays.', 3500.00, '../main/images/products/truffle cake.jpg', 'Birthday Cakes', 4.5, 42, 'Bestseller'),
+('Red Velvet Cake', 'Classic red velvet cake with cream cheese frosting.', 3800.00, '../main/images/products/red velvet cake.jpg', 'Birthday Cakes', 5.0, 38, NULL),
+('Vanilla Buttercream Cake', 'Light and fluffy vanilla cake with buttercream frosting.', 3200.00, '../main/images/products/buttercream cake.jpg', 'Birthday Cakes', 4.5, 31, NULL),
+('Assorted Cupcakes (Box of 6)', 'A delightful mix of flavored cupcakes.', 1800.00, '../main/images/categories/cupcakes.jpg', 'Cupcakes', 5.0, 64, 'Bestseller'),
+('Chocolate Eclairs (Box of 4)', 'Creamy chocolate-filled eclairs.', 1200.00, '../main/images/categories/pastries.jpg', 'Pastries', 4.5, 41, NULL);
 
 
 
