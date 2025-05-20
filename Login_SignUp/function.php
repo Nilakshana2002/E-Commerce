@@ -50,7 +50,7 @@ function pwdMatch($pass,$repass){
 
 
 function checkUser($connect, $email, $pass) {
-     $sql = "SELECT password FROM userdetails WHERE eMail = ?;";
+     $sql = "SELECT password FROM users WHERE eMail = ?;";
      $stmt = $connect->prepare($sql);
      $stmt->bind_param("s",$email);
      $stmt->execute();
