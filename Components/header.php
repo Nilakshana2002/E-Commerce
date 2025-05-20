@@ -56,7 +56,7 @@
 
               <!-- Header Icons -->
               <div class="flex items-center space-x-4">
-                  <a href="#" class="text-gray-700 hover:text-amber-600 transition">
+                  <a href="../Cart/search.php" class="text-gray-700 hover:text-amber-600 transition">
                       <i class="fas fa-search text-xl"></i>
                   </a>
                   <a href="../Login_SignUp/login.php" class="text-gray-700 hover:text-amber-600 transition">
