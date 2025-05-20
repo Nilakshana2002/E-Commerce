@@ -151,3 +151,66 @@ INSERT INTO products (name, description, price, image, category, rating, reviews
 ('Dessert Platter', 'A party-ready mix of mini desserts including brownies, tarts, cupcakes, and more. Great for events or gatherings.', 5200.00, '../main/images/shop/dessert platter.jpg', 'Desserts', 4.6, 23, 'Party Pack'),
 ('Anniversary Celebration Cake', 'A romantic and elegant cake perfect for anniversaries, made with your choice of flavors and designs.', 5200.00, '../main/images/categories/eclairs.jpg', 'Cakes', 4.8, 19, 'Anniversary'),
 ('Deluxe Birthday Cake', 'A grand birthday cake with vibrant decorations and customizable flavors. Guaranteed to wow any party crowd!', 4800.00, '../main/images/shop/deluxe cake.jpg', 'Cakes', 4.9, 15, 'Birthday');
+
+
+-- Insert Blueberry Cheesecake
+INSERT INTO products (name, description, price, image, category, rating, reviews, badge)
+VALUES (
+    'Blueberry Cheesecake',
+    'A creamy, melt-in-your-mouth cheesecake topped with a luscious blueberry glaze. Perfectly balanced for every dessert lover!',
+    4200.00,
+    '../main/images/shop/cheese cake.jpg',
+    'cheesecake',
+    4.7,
+    24,
+    'popular'
+);
+
+INSERT INTO products (name, description, price, image, category, rating, reviews, badge)
+VALUES (
+    'Chocolate Mousse Cake',
+    'An indulgent, rich chocolate cake layered with silky mousse and topped with chocolate shavings. A chocoholic’s dream!',
+    3600.00,
+    '../main/images/shop/chocolate mousse cake.jpg',
+    'chocolate',
+    4.9,
+    47,
+    'featured'
+);
+
+INSERT INTO products (name, description, price, image, category, rating, reviews, badge)
+VALUES (
+    'Fruit Gateau',
+    'A light and fluffy sponge cake layered with whipped cream and topped with a medley of fresh seasonal fruits. Refreshing and elegant!',
+    3900.00,
+    '../main/images/shop/fruite gateau.jpg',
+    'fruit',
+    4.6,
+    19,
+    'new'
+);
+
+
+INSERT INTO products (name, description, price, image, category, rating, reviews, badge)
+VALUES (
+    'Elegant Wedding Cake',
+    'A stunning multi-tiered wedding cake designed with elegance and precision. Customizable flavors and decorations to match your dream celebration.',
+    8500.00,
+    '../main/images/shop/elegent cake.jpg',
+    'wedding',
+    4.9,
+    28,
+    'premium'
+);
+
+INSERT INTO products (name, description, price, image, category, rating, reviews, badge)
+VALUES (
+    'Anniversary Layer Cake',
+    'A beautifully layered cake crafted for memorable anniversaries. Rich in flavor, elegant in design, and perfect for celebrating love.',
+    5200.00,
+    '../main/images/shop/anniversary cake.jpg',
+    'anniversary',
+    4.7,
+    19,
+    'special'
+);
