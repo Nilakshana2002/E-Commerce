@@ -55,6 +55,8 @@ session_start();
   <!-- Header -->
   <?php include '../Components/header.php'; ?>
 
+  
+   
 
   <!-- Categories Navigation -->
   <section class="py-8 bg-white">
@@ -153,7 +155,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.html" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-8 rounded-full transition">View All Birthday Cakes</a>
+              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Birthday Cakes</a>
           </div>
       </div>
   </section>
@@ -189,7 +191,7 @@ session_start();
               </a>
               
               <!-- Wedding Cake 2 -->
-              <a href="product-details.php?id=5">
+              <a href="product-details.php?id=7">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
                           <img src="../main/images/categories/floral cake.jpg" alt="Floral Wedding Cake" class="w-full h-64 object-cover">
@@ -214,7 +216,7 @@ session_start();
               </a>
               
               <!-- Wedding Cake 3 -->
-              <a href="product-details.php?id=6">
+              <a href="product-details.php?id=9">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
                           <img src="../main/images/categories/rustic cake.jpg" alt="Rustic Wedding Cake" class="w-full h-64 object-cover">
@@ -242,7 +244,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.html" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-8 rounded-full transition">View All Wedding Cakes</a>
+              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Wedding Cakes</a>
           </div>
       </div>
   </section>
@@ -253,7 +255,7 @@ session_start();
           <h2 class="text-3xl font-bold mb-8">Cupcakes</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <!-- Cupcake 1 -->
-              <a href="product-details.php?id=7">
+              <a href="product-details.php?id=5">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
                           <img src="../main/images/categories/assorted cupcake.jpg" alt="Assorted Cupcakes" class="w-full h-64 object-cover">
@@ -281,7 +283,7 @@ session_start();
               </a>
               
               <!-- Cupcake 2 -->
-              <a href="product-details.php?id=8">
+              <a href="product-details.php?id=10">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
                           <img src="../main/images/categories/c cupcakes.jpg" alt="Chocolate Cupcakes" class="w-full h-64 object-cover">
@@ -306,7 +308,7 @@ session_start();
               </a>
               
               <!-- Cupcake 3 -->
-              <a href="product-details.php?id=9">
+              <a href="product-details.php?id=11">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
                           <img src="../main/images/categories/red velvet cupcake.jpg" alt="Red Velvet Cupcakes" class="w-full h-64 object-cover">
@@ -337,7 +339,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.html" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-8 rounded-full transition">View All Cupcakes</a>
+              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Cupcakes</a>
           </div>
       </div>
   </section>
@@ -348,7 +350,7 @@ session_start();
           <h2 class="text-3xl font-bold mb-8">Pastries</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <!-- Pastry 1 -->
-              <a href="product-details.php?id=10">
+              <a href="product-details.php?id=6">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
                           <img src="../main/images/categories/eclairs.jpg" alt="Chocolate Eclairs" class="w-full h-64 object-cover">
@@ -373,7 +375,7 @@ session_start();
               </a>
               
               <!-- Pastry 2 -->
-              <a href="product-details.php?id=11">
+              <a href="product-details.php?id=12">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
                           <img src="../main/images/categories/fruit tarts.jpg" alt="Fruit Tarts" class="w-full h-64 object-cover">
@@ -401,7 +403,7 @@ session_start();
               </a>
               
               <!-- Pastry 3 -->
-              <a href="product-details.php?id=12">
+              <a href="product-details.php?id=13">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
                           <img src="../main/images/categories/butter.jpg" alt="Croissants" class="w-full h-64 object-cover">
@@ -429,7 +431,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.html" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-8 rounded-full transition">View All Pastries</a>
+              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Pastries</a>
           </div>
       </div>
   </section>
@@ -504,9 +506,9 @@ session_start();
                       <div class="mt-8">
                           <p class="text-gray-600 mb-4">Need inspiration? Check out some of our previous custom cake designs:</p>
                           <div class="grid grid-cols-3 gap-2">
-                              <img src="images/products/product-1.jpg" alt="Custom Cake Example" class="rounded-md">
-                              <img src="images/products/product-3.jpg" alt="Custom Cake Example" class="rounded-md">
-                              <img src="images/products/product-5.jpg" alt="Custom Cake Example" class="rounded-md">
+                              <img src="../main/images/shop/rainbow cake.jpg" alt="Custom Cake Example" class="rounded-md">
+                              <img src="../main/images/shop/elegent cake.jpg" alt="Custom Cake Example" class="rounded-md">
+                              <img src="../main/images/shop/black forest cake.jpg" alt="Custom Cake Example" class="rounded-md">
                           </div>
                       </div>
                   </div>
