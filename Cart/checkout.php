@@ -1,5 +1,10 @@
 <?php
 session_start();
+// Check if user is logged in
+if (!isset($_SESSION['user_email'])) {
+    header("Location: ../Login_SignUp/login.php");
+    exit;
+}
 ?>
 <script type="text/javascript">
         var gk_isXlsx = false;

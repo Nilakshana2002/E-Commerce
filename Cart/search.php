@@ -153,7 +153,7 @@ $popular_searches = ['Chocolate Cake', 'Birthday Cake', 'Cupcakes', 'Wedding Cak
             </h1>
             
             <?php if (!empty($search_query)): ?>
-            <p class="text-xl text-white text-center mb-8 opacity-90">
+            <p class="text-xl text-grey-600 text-center mb-8 opacity-90">
                 Showing results for "<?php echo htmlspecialchars($search_query); ?>"
             </p>
             <?php else: ?>

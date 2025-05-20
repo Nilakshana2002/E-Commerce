@@ -301,7 +301,7 @@ $products = [
         'reviews' => 36,
         'tags' => [],
         'date_added' => '2023-11-05',
-        'product_url' => 'product-details.php?id=28'
+        'product_url' => 'product-details.php?id=40'
     ],
     
     // Page 5 Products
