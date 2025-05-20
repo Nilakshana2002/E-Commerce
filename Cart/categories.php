@@ -155,7 +155,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Birthday Cakes</a>
+              <a href="shop-template.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Birthday Cakes</a>
           </div>
       </div>
   </section>
@@ -216,7 +216,7 @@ session_start();
               </a>
               
               <!-- Wedding Cake 3 -->
-              <a href="product-details.php?id=9">
+              <a href="product-details.php?id=8">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
                           <img src="../main/images/categories/rustic cake.jpg" alt="Rustic Wedding Cake" class="w-full h-64 object-cover">
@@ -244,7 +244,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Wedding Cakes</a>
+              <a href="shop-template.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Wedding Cakes</a>
           </div>
       </div>
   </section>
@@ -283,7 +283,7 @@ session_start();
               </a>
               
               <!-- Cupcake 2 -->
-              <a href="product-details.php?id=10">
+              <a href="product-details.php?id=9">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
                           <img src="../main/images/categories/c cupcakes.jpg" alt="Chocolate Cupcakes" class="w-full h-64 object-cover">
@@ -308,7 +308,7 @@ session_start();
               </a>
               
               <!-- Cupcake 3 -->
-              <a href="product-details.php?id=11">
+              <a href="product-details.php?id=10">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                       <div class="relative">
                           <img src="../main/images/categories/red velvet cupcake.jpg" alt="Red Velvet Cupcakes" class="w-full h-64 object-cover">
@@ -339,7 +339,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Cupcakes</a>
+              <a href="shop-template.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Cupcakes</a>
           </div>
       </div>
   </section>
@@ -375,7 +375,7 @@ session_start();
               </a>
               
               <!-- Pastry 2 -->
-              <a href="product-details.php?id=12">
+              <a href="product-details.php?id=11">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
                           <img src="../main/images/categories/fruit tarts.jpg" alt="Fruit Tarts" class="w-full h-64 object-cover">
@@ -403,7 +403,7 @@ session_start();
               </a>
               
               <!-- Pastry 3 -->
-              <a href="product-details.php?id=13">
+              <a href="product-details.php?id=12">
                   <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition border border-gray-200">
                       <div class="relative">
                           <img src="../main/images/categories/butter.jpg" alt="Croissants" class="w-full h-64 object-cover">
@@ -431,7 +431,7 @@ session_start();
               </a>
           </div>
           <div class="text-center mt-8">
-              <a href="shop.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Pastries</a>
+              <a href="shop-template.php" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-600 font-medium py-3 px-8 rounded-full transition">View All Pastries</a>
           </div>
       </div>
   </section>

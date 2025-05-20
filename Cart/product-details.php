@@ -45,7 +45,7 @@ session_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$conn = new mysqli("localhost", "root", "Kali00@#12", "sweet_delights");
+$conn = new mysqli("localhost", "root", "Nilakshana_123@", "sweet_delights");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -108,7 +108,7 @@ $conn->close();
                         <p class="text-xl font-bold mb-4">Rs. <?php echo number_format($product['price'], 2); ?></p>
                         <p class="text-gray-600 mb-6"><?php echo htmlspecialchars($product['description']); ?></p>
                         <?php if ($product['badge']): ?>
-                            <span class="inline-block bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full mb-4"><?php echo htmlspecialchars($product['badge']); ?></span>
+                            <span class="inline-block bg-amber-600 text-green-600 text-sm font-medium px-3 py-1 rounded-full mb-4"><?php echo htmlspecialchars($product['badge']); ?></span>
                         <?php endif; ?>
                         <!-- Add to Cart Form -->
                         <form action="add-to-cart.php" method="POST">

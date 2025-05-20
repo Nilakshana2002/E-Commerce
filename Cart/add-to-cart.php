@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $quantity = isset($_POST['quantity']) ? intval($_POST['quantity']) : 1;
 
   if ($product_id > 0 && $quantity > 0) {
-    $conn = new mysqli("localhost", "root", "Kali00@#12", "sweet_delights");
+    $conn = new mysqli("localhost", "root", "Nilakshana_123@", "sweet_delights");
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
     }

@@ -1,4 +1,7 @@
 <?php
+session_start();
+?>
+<?php
 // Include products data
 include 'products.php';
 
@@ -270,7 +273,7 @@ $popular_searches = ['Chocolate Cake', 'Birthday Cake', 'Cupcakes', 'Wedding Cak
                             <?php if (!empty($product['tags'])): ?>
                             <div class="absolute top-4 right-4">
                                 <?php if (in_array('bestseller', $product['tags'])): ?>
-                                <span class="bg-amber-600 text-white text-sm font-medium px-3 py-1 rounded-full shadow-md">Bestseller</span>
+                                <span class="bg-yellow-600 text-white text-sm font-medium px-3 py-1 rounded-full shadow-md">Bestseller</span>
                                 <?php elseif (in_array('new', $product['tags'])): ?>
                                 <span class="bg-green-600 text-white text-sm font-medium px-3 py-1 rounded-full shadow-md">New</span>
                                 <?php elseif (in_array('sale', $product['tags'])): ?>
@@ -324,7 +327,7 @@ $popular_searches = ['Chocolate Cake', 'Birthday Cake', 'Cupcakes', 'Wedding Cak
                             <?php else: ?>
                             <span class="text-xl font-bold text-amber-600">Rs. <?php echo number_format($product['price']); ?></span>
                             <?php endif; ?>
-                            <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-white rounded-full p-3 transition-all shadow-md hover:shadow-lg"
+                            <button class="add-to-cart bg-amber-600 hover:bg-amber-700 text-green-600 rounded-full p-3 transition-all shadow-md hover:shadow-lg"
                                     data-id="<?php echo $product['id']; ?>"
                                     data-name="<?php echo htmlspecialchars($product['name']); ?>"
                                     data-price="<?php echo $product['price']; ?>"

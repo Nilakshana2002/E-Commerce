@@ -1,3 +1,4 @@
+
 <?php
 // This file simulates a database of products
 
@@ -24,7 +25,9 @@ $products = [
         'rating' => 5.0,
         'reviews' => 38,
         'tags' => [],
-        'date_added' => '2023-09-20'
+        'date_added' => '2023-09-20',
+        'product_url' => 'product-details.php?id=2'
+        
     ],
     [
         'id' => 3,
@@ -35,7 +38,8 @@ $products = [
         'rating' => 4.0,
         'reviews' => 24,
         'tags' => ['new'],
-        'date_added' => '2023-12-05'
+        'date_added' => '2023-12-05',
+        'product_url' => 'product-details.php?id=35'
     ],
     [
         'id' => 4,
@@ -46,7 +50,8 @@ $products = [
         'rating' => 4.5,
         'reviews' => 31,
         'tags' => [],
-        'date_added' => '2023-08-12'
+        'date_added' => '2023-08-12',
+        'product_url' => 'product-details.php?id=3'
     ],
     [
         'id' => 5,
@@ -57,7 +62,8 @@ $products = [
         'rating' => 4.0,
         'reviews' => 19,
         'tags' => [],
-        'date_added' => '2023-11-03'
+        'date_added' => '2023-11-03',
+        'product_url' => 'product-details.php?id=37'
     ],
     [
         'id' => 6,
@@ -69,7 +75,8 @@ $products = [
         'reviews' => 47,
         'tags' => ['sale'],
         'original_price' => 4200,
-        'date_added' => '2023-07-25'
+        'date_added' => '2023-07-25',
+        'product_url' => 'product-details.php?id=36'
     ],
     
     // Page 2 Products
@@ -82,7 +89,8 @@ $products = [
         'rating' => 4.5,
         'reviews' => 29,
         'tags' => ['new'],
-        'date_added' => '2023-12-10'
+        'date_added' => '2023-12-10',
+        'product_url' => 'product-details.php?id=13'
     ],
     [
         'id' => 8,
@@ -93,7 +101,8 @@ $products = [
         'rating' => 4.0,
         'reviews' => 34,
         'tags' => [],
-        'date_added' => '2023-09-15'
+        'date_added' => '2023-09-15',
+        'product_url' => 'product-details.php?id=15'
     ],
     [
         'id' => 9,
@@ -104,7 +113,8 @@ $products = [
         'rating' => 5.0,
         'reviews' => 52,
         'tags' => ['bestseller'],
-        'date_added' => '2023-08-05'
+        'date_added' => '2023-08-05',
+        'product_url' => 'product-details.php?id=14'
     ],
     [
         'id' => 10,
@@ -115,7 +125,8 @@ $products = [
         'rating' => 3.5,
         'reviews' => 27,
         'tags' => [],
-        'date_added' => '2023-10-20'
+        'date_added' => '2023-10-20',
+        'product_url' => 'product-details.php?id=16'
     ],
     [
         'id' => 11,
@@ -127,7 +138,8 @@ $products = [
         'reviews' => 23,
         'tags' => ['sale'],
         'original_price' => 3500,
-        'date_added' => '2023-07-15'
+        'date_added' => '2023-07-15',
+        'product_url' => 'product-details.php?id=17'
     ],
     [
         'id' => 12,
@@ -138,7 +150,8 @@ $products = [
         'rating' => 4.5,
         'reviews' => 31,
         'tags' => [],
-        'date_added' => '2023-11-12'
+        'date_added' => '2023-11-12',
+        'product_url' => 'product-details.php?id=18'
     ],
     
     // Page 3 Products
@@ -151,7 +164,8 @@ $products = [
         'rating' => 4.0,
         'reviews' => 18,
         'tags' => ['new'],
-        'date_added' => '2023-12-15'
+        'date_added' => '2023-12-15',
+        'product_url' => 'product-details.php?id=19'
     ],
     [
         'id' => 14,
@@ -162,7 +176,8 @@ $products = [
         'rating' => 4.5,
         'reviews' => 45,
         'tags' => [],
-        'date_added' => '2023-09-25'
+        'date_added' => '2023-09-25',
+        'product_url' => 'product-details.php?id=20'
     ],
     [
         'id' => 15,
@@ -173,7 +188,8 @@ $products = [
         'rating' => 4.0,
         'reviews' => 37,
         'tags' => [],
-        'date_added' => '2023-10-05'
+        'date_added' => '2023-10-05',
+        'product_url' => 'product-details.php?id=21'
     ],
     [
         'id' => 16,
@@ -184,7 +200,8 @@ $products = [
         'rating' => 5.0,
         'reviews' => 56,
         'tags' => ['bestseller'],
-        'date_added' => '2023-08-18'
+        'date_added' => '2023-08-18',
+        'product_url' => 'product-details.php?id=22'
     ],
     [
         'id' => 17,
@@ -196,7 +213,8 @@ $products = [
         'reviews' => 29,
         'tags' => ['sale'],
         'original_price' => 1800,
-        'date_added' => '2023-07-30'
+        'date_added' => '2023-07-30',
+        'product_url' => 'product-details.php?id=6'
     ],
     [
         'id' => 18,
@@ -207,7 +225,8 @@ $products = [
         'rating' => 4.5,
         'reviews' => 42,
         'tags' => [],
-        'date_added' => '2023-11-20'
+        'date_added' => '2023-11-20',
+        'product_url' => 'product-details.php?id=23'
     ],
     
     // Page 4 Products
@@ -220,7 +239,8 @@ $products = [
         'rating' => 4.0,
         'reviews' => 33,
         'tags' => [],
-        'date_added' => '2023-09-10'
+        'date_added' => '2023-09-10',
+        'product_url' => 'product-details.php?id=12'
     ],
     [
         'id' => 20,
@@ -231,7 +251,8 @@ $products = [
         'rating' => 5.0,
         'reviews' => 48,
         'tags' => ['bestseller'],
-        'date_added' => '2023-08-25'
+        'date_added' => '2023-08-25',
+        'product_url' => 'product-details.php?id=24'
     ],
     [
         'id' => 21,
@@ -242,7 +263,8 @@ $products = [
         'rating' => 4.5,
         'reviews' => 39,
         'tags' => [],
-        'date_added' => '2023-10-30'
+        'date_added' => '2023-10-30',
+        'product_url' => 'product-details.php?id=25'
     ],
     [
         'id' => 22,
@@ -254,7 +276,8 @@ $products = [
         'reviews' => 41,
         'tags' => ['sale'],
         'original_price' => 1800,
-        'date_added' => '2023-07-20'
+        'date_added' => '2023-07-20',
+        'product_url' => 'product-details.php?id=26'
     ],
     [
         'id' => 23,
@@ -265,7 +288,8 @@ $products = [
         'rating' => 4.0,
         'reviews' => 22,
         'tags' => ['new'],
-        'date_added' => '2023-12-01'
+        'date_added' => '2023-12-01',
+        'product_url' => 'product-details.php?id=29'
     ],
     [
         'id' => 24,
@@ -276,7 +300,8 @@ $products = [
         'rating' => 4.5,
         'reviews' => 36,
         'tags' => [],
-        'date_added' => '2023-11-05'
+        'date_added' => '2023-11-05',
+        'product_url' => 'product-details.php?id=28'
     ],
     
     // Page 5 Products
@@ -289,7 +314,8 @@ $products = [
         'rating' => 5.0,
         'reviews' => 28,
         'tags' => ['premium'],
-        'date_added' => '2023-09-05'
+        'date_added' => '2023-09-05',
+        'product_url' => 'product-details.php?id=38'
     ],
     [
         'id' => 26,
@@ -300,7 +326,8 @@ $products = [
         'rating' => 4.5,
         'reviews' => 19,
         'tags' => [],
-        'date_added' => '2023-10-25'
+        'date_added' => '2023-10-25',
+        'product_url' => 'product-details.php?id=39'
     ],
     [
         'id' => 27,
@@ -311,7 +338,8 @@ $products = [
         'rating' => 4.0,
         'reviews' => 15,
         'tags' => ['new'],
-        'date_added' => '2023-12-08'
+        'date_added' => '2023-12-08',
+        'product_url' => 'product-details.php?id=34'
     ],
     [
         'id' => 28,
@@ -322,7 +350,8 @@ $products = [
         'rating' => 5.0,
         'reviews' => 32,
         'tags' => ['custom'],
-        'date_added' => '2023-11-15'
+        'date_added' => '2023-11-15',
+        'product_url' => 'product-details.php?id=30'
     ],
     [
         'id' => 29,
@@ -334,7 +363,8 @@ $products = [
         'reviews' => 27,
         'tags' => ['sale'],
         'original_price' => 3500,
-        'date_added' => '2023-08-10'
+        'date_added' => '2023-08-10',
+        'product_url' => 'product-details.php?id=31'
     ],
     [
         'id' => 30,
@@ -345,7 +375,8 @@ $products = [
         'rating' => 4.0,
         'reviews' => 23,
         'tags' => [],
-        'date_added' => '2023-09-30'
+        'date_added' => '2023-09-30',
+        'product_url' => 'product-details.php?id=32'
     ]
 ];
 
