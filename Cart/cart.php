@@ -83,7 +83,9 @@ session_start();
             <tr class="border-b border-gray-100">
               <td class="py-4 flex items-center">
                 <img src="<?php echo htmlspecialchars($item['image']); ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" class="w-16 h-16 object-cover rounded-md mr-4">
-                <span><?php echo htmlspecialchars($item['name']); ?></span>
+                <span><?php echo htmlspecialchars($item['name']); ?>
+                <p class="text-gray-600">Rs. <?php echo number_format($item['price'], 2); ?> x <?php echo $item['quantity']; ?></p></span>
+                
               </td>
               <td class="py-4">Rs. <?php echo number_format($item['price'], 2); ?></td>
               <td class="py-4">
@@ -108,7 +110,12 @@ session_start();
           <div>
             <p class="text-xl font-bold">Total: Rs. <?php echo number_format($total, 2); ?></p>
           </div>
-          <a href="checkout.php" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Proceed to Checkout</a>
+          <!--<a href="checkout.php" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Proceed to Checkout</a>-->
+          <?php if (isset($_SESSION['user_email'])): ?>
+            <a href="checkout.php" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Proceed to Checkout</a>
+          <?php else: ?>
+            <a href="../Login_SignUp/login.php" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Login to Checkout</a>
+          <?php endif; ?>
         </div>
       </div>
       <?php else: ?>

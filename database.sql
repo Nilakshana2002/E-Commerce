@@ -214,3 +214,16 @@ VALUES (
     19,
     'special'
 );
+
+
+INSERT INTO products (name, description, price, image, category, rating, reviews, badge)
+VALUES (
+    'Chocolate Brownies',
+    'Decadent and fudgy chocolate brownies with a rich cocoa flavor and gooey center. Perfect for chocolate lovers!',
+    1900.00,
+    '../main/images/shop/brownies.jpg',
+    'dessert',
+    4.8,
+    36,
+    'bestseller'
+);

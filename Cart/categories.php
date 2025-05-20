@@ -476,7 +476,7 @@ session_start();
                               <label for="message" class="block text-gray-700 font-medium mb-2">Your Cake Idea</label>
                               <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500" required></textarea>
                           </div>
-                          <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-medium py-2 px-4 rounded-md transition">Submit Request</button>
+                          <button type="submit" class="w-full bg-green-600 hover:bg-amber-700 text-white font-medium py-2 px-4 rounded-md transition">Submit Request</button>
                       </form>
                   </div>
                   <div class="bg-amber-50 p-8 flex flex-col justify-center">

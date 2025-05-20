@@ -20,6 +20,8 @@
 
  // Check if user credentials are valid
  if ($checkUser == true) {
+    session_start();
+    $_SESSION['user_email'] = $email;
     echo "<script>
     swal({  
         title: 'Welcome!',  

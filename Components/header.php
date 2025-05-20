@@ -1,5 +1,6 @@
  <?php
-    $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
+
+$cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 ?>
 <!-- Top Banner -->
 <!--<div class="bg-amber-800 text-white text-center py-2 text-sm">
@@ -11,7 +12,7 @@
       <div class="container mx-auto px-4">
           <div class="flex justify-between items-center py-4">
               <!-- Logo -->
-              <a href="../main/index.html" class="flex items-center">
+              <a href="../main/index.php" class="flex items-center">
                     <svg width="180" height="60" viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg" class="h-12">
                         <rect width="180" height="60" rx="8" fill="white"/>
                         <circle cx="30" cy="20" r="20" fill="#fef3c7" opacity="0.8"/>
@@ -69,6 +70,16 @@
                   <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-amber-600 transition">
                       <i class="fas fa-bars text-2xl"></i>
                   </button>
+                  <!-- Login/Logout Button -->
+                  <?php if (isset($_SESSION['user_email'])): ?>
+                      <a href="../Login_SignUp/logout.php" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">
+                          <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                      </a>
+                  <?php else: ?>
+                      <a href="../Login_SignUp/login.php" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium transition">
+                          <i class="fas fa-sign-in-alt mr-2"></i>Login
+                      </a>
+                  <?php endif; ?>
               </div>
           </div>
       </div>
