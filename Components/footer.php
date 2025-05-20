@@ -60,7 +60,7 @@
                 <h3 class="text-xl font-bold mb-6">Quick Links</h3>
                 <ul class="space-y-3">
                     <li><a href="../main/index.php" class="text-gray-400 hover:text-white transition">Home</a></li>
-                    <li><a href="../Cart/shop.php" class="text-gray-400 hover:text-white transition">Shop</a></li>
+                    <li><a href="../Cart/shop-template.php" class="text-gray-400 hover:text-white transition">Shop</a></li>
                     <li><a href="../main/about.php" class="text-gray-400 hover:text-white transition">About Us</a></li>
                     <li><a href="../main/contact.php" class="text-gray-400 hover:text-white transition">Contact</a></li>
                     <li><a href="../main/faq.php" class="text-gray-400 hover:text-white transition">FAQs</a></li>

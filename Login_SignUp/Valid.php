@@ -26,7 +26,7 @@
         text: 'We are here to help you!',  
         icon: 'success',    
     }).then(() => {
-        window.location.href = 'index.html';
+        window.location.href = '../main/index.php';
     });
     </script>";
      /*header("Location: ./index.html");*/

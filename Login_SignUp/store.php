@@ -60,7 +60,7 @@ if($pwdMatch !== false){
     exit();
 }
 // Check if email already exists
-$verify_mail = mysqli_query($connect, "SELECT eMail FROM userDetails WHERE eMail='$mail'");
+$verify_mail = mysqli_query($connect, "SELECT eMail FROM users WHERE eMail='$mail'");
 // Use mysqli_num_rows to check if any rows were returned
 if (mysqli_num_rows($verify_mail) != 0) {
    /* echo "<div class='msg'>
@@ -86,7 +86,7 @@ if (mysqli_num_rows($verify_mail) != 0) {
     // Insert new record
 
     $secure_pass = password_hash($pass,PASSWORD_DEFAULT);
-    $sql = "INSERT INTO userDetails(firstname,lastName,eMail, password) VALUES ('$fName', '$lName', '$mail','$secure_pass')";
+    $sql = "INSERT INTO users(firstname,lastName,eMail, password) VALUES ('$fName', '$lName', '$mail','$secure_pass')";
 
     if (mysqli_query($connect, $sql)) {
        /* echo "<div>
