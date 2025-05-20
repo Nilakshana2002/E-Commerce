@@ -3,303 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up</title>
-    <!--<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">-->
-    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Sign Up | Sweet Delights</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-      /*
-     html, body {
-         margin: 0;
-         padding: 0;
-         width: 100%;
-         height: 100%;
-         background-image: url(./img/11.jpg);
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position: center;
-         background-attachment: fixed;
-         font-family:san-serif;
-         
-     }
-
-     .full-height {
-         min-height: 100vh;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-
-     .left-column {
-          background-color:#f2f2f2;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         min-height: 300px;
-        color:white;
-     }
-
-     .form-container {
-         padding: 20px;
-         background-color: #ffffff;
-         border-radius: 10px;
-         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-     }
-
-     @media (max-width: 575.98px) {
-         .left-column, .form-container {
-             min-height: auto;
-             margin-bottom: 20px;
-             margin-top:200px;
-         }
-         
-     }
-     img{
-        height: 578px;
-     }
-     .container{
-         height: 100vh;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         background-color: #f2f2f2;
-         padding: 30px; 
-         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-         margin-bottom: 50px;
-     }
-     
-      */
-      html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: san-serif;
-}
-
-.full-height {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.left-column {
-    background-color: #f2f2f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 300px;
-    color: white;
-}
-
-.form-container {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-img {
-    height: 578px;
-}
-
-.container {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f2f2f2;
-    padding: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
-}
-
-/* Media Queries */
-@media (max-width: 992px) {
-    .left-column,
-    .form-container {
-        min-height: 300px;
-    }
-}
-
-@media (max-width: 768px) {
-    img {
-        height: auto;  
-        max-height: 300px; /* Limit max height */
-    }
-
-    .container {
-        flex-direction: column;  
-        height: auto;  
-    }
-
-    .left-column,
-    .form-container {
-        margin-bottom: 20px;  
-    }
-}
-
-@media (max-width: 576px) {
-    .form-container {
-        padding: 15px; /* Reduce padding */
-    }
-
-    .left-column {
-        min-height: auto; /* Remove minimum height */
-    }
-
-    .col-md-6 {
-        flex: 0 0 100%;  
-        max-width: 100%;
-    }
-
-    .d-grid {
-        width: 100%; /* Make button full width */
-    }
-}
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        
+        .form-input:focus {
+            box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.3);
+        }
+        
+        .carousel-item {
+            transition: opacity 0.6s ease-in-out;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .carousel-item.active {
+            opacity: 1;
+            position: relative;
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+        }
     </style>
 </head>
-<body>
-  <div class="container">
-    <div class="row w-100 gx-0 ">
-      <!-- Left column (Beige column) -->
-      <div class="col-md-6 col-sm-12 left-column">
-        <!--<div class="row">
-        <div class="col-12 text-center"><h2>Welcome to Sign Up</h2></div>
-        <div class="col-12">
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum perferendis placeat quae perspiciatis dolorem laborum sequi aliquam consequatur facilis id?</p>
-        </div>
-       </div>-->
-       <div id="carouselExampleCaptions" class="carousel slide w-100 h-100 mt-5 ">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner w-100">
-          <div class="carousel-item active">
-            <img src="../images/instagram/hero-3.jpg" class="d-block w-100"alt="...">
-            <div class="carousel-caption d-none d-md-block">
- 
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../images/instagram/hero-1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
- 
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../images/instagram/hero-2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
- 
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      </div>
-
-      <!-- Right column (form) -->
-      <div class="col-md-6 col-sm-12 right">
-        <div class="form-container" style="border-radius:10px;">
-        <a class="icon-link" href="home.php">
-  <img src="./img/logo2.png" alt="Logo"aria-hidden="true" style="width: 50px; height: 50px;">
-</a>
-
-          <h2 class="text-center mb-4">Create an Account</h2>
-          <form action="store.php" class="row g-3 needs-validation" method="post" novalidate>
-            <div class="col-md-6">
-              <label for="validationCustom01" class="form-label">First name</label>
-              <input type="text" name="fName" class="form-control" id="validationCustom01" placeholder="Enter Your Frist Name" required>
-              <div class="invalid-feedback">
-                Please enter your name!
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label for="validationCustom02" class="form-label">Last name</label>
-              <input type="text" name="lName" class="form-control" id="validationCustom02" placeholder="Enter Your Last Name" required>
-              <div class="invalid-feedback">
-                Please enter your lastname!
-              </div>
-            </div>
-            <div class="col-md-12">
-              <label for="validationCustom03" class="form-label">Email Address</label>
-              <input type="email" name="mail" class="form-control" id="validationCustom03" placeholder="Enter Your Email Address" required>
-              <div class="invalid-feedback"id="exist-email" >
-                Please enter your E-mail!
-              </div>
-            </div>
-            <div class="col-md-12">
-              <label for="validationCustom04" class="form-label">Password</label>
-              <input type="password" name="pass" class="form-control" id="validationCustom04" required>
-              <div class="invalid-feedback">
-                Password required!
-              </div>
-            </div>
-            <div class="col-md-12">
-              <label for="validationCustom04" class="form-label">Repeat Password</label>
-              <input type="password" name="repass" class="form-control" id="validationCustom04" required>
-              <div class="invalid-feedback">
-                Password required!
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                  You must agree before submitting.
+<body class="font-sans bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8 md:py-8">
+        <div class="flex flex-col md:flex-row bg-white rounded-2xl shadow-xl overflow-hidden max-w-6xl mx-auto">
+            <!-- Left column (Carousel) -->
+            <div class="md:w-1/2 bg-gray-100 relative">
+                <div id="carousel" class="w-full h-full overflow-hidden">
+                    <div class="carousel-item active">
+                        <img src="../main/images/hero/hero.jpg" class="w-full h-full object-cover" alt="Delicious cake">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../main/images/hero/hero2.jpg" class="w-full h-full object-cover" alt="Sweet treats">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../main/images/hero/hero3.jpg" class="w-full h-full object-cover" alt="Bakery items">
+                    </div>
                 </div>
-              </div>
+                
+                <!-- Carousel controls -->
+                <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+                    <button class="w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none carousel-indicator active" data-index="0"></button>
+                    <button class="w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none carousel-indicator" data-index="1"></button>
+                    <button class="w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none carousel-indicator" data-index="2"></button>
+                </div>
+                
+                <!-- Overlay with text -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
+                    <h2 class="text-3xl font-bold mb-2">Welcome to Sweet Delights</h2>
+                    <p class="text-lg opacity-90">Create an account to order our delicious cakes and pastries</p>
+                </div>
             </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <button class="btn btn-primary" type="submit" name="submit">Sign Up</button>
-            </div>
-            <div class="col-12 text-center">
-              <p>Do you have an account <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="login.php">Sign In</a> .</p>
-            </div>
-          </form>
-        </div>
-      </div>
-      
-    </div>
-  </div>
 
-<!--<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>-->
-<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function () {
-    'use strict'
-    const forms = document.querySelectorAll('.needs-validation')
-    Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-        form.classList.add('was-validated')
-      }, false)
-    })
-  })()
-</script>
+            <!-- Right column (Form) -->
+            <div class="md:w-1/2 p-8 md:p-12 fade-in">
+                <div class="flex items-center justify-between mb-8">
+                    <a href="../main/index.php" class="flex items-center">
+                        <img src="../main/images/logo.png" alt="Sweet Delights Logo" class="w-12 h-12 mr-3">
+                        <span class="text-2xl font-bold text-amber-600">Sweet Delights</span>
+                    </a>
+                    <a href="login.php" class="text-amber-600 hover:text-amber-700 font-medium">Sign In</a>
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Create Your Account</h2>
+                
+                <form action="store.php" method="post" class="space-y-6" id="signup-form" novalidate>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="firstName" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                name="fName" 
+                                class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                                placeholder="Enter your first name"
+                                required
+                            >
+                            <p class="mt-1 text-sm text-red-600 hidden" id="firstName-error">Please enter your first name</p>
+                        </div>
+                        
+                        <div>
+                            <label for="lastName" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                            <input 
+                                type="text" 
+                                id="lastName" 
+                                name="lName" 
+                                class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                                placeholder="Enter your last name"
+                                required
+                            >
+                            <p class="mt-1 text-sm text-red-600 hidden" id="lastName-error">Please enter your last name</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="mail" 
+                            class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                            placeholder="Enter your email address"
+                            required
+                        >
+                        <p class="mt-1 text-sm text-red-600 hidden" id="email-error">Please enter a valid email address</p>
+                    </div>
+                    
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                        <div class="relative">
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="pass" 
+                                class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                                placeholder="Create a password"
+                                required
+                            >
+                            <button type="button" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 focus:outline-none" id="toggle-password">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                        <p class="mt-1 text-sm text-red-600 hidden" id="password-error">Password is required</p>
+                    </div>
+                    
+                    <div>
+                        <label for="confirmPassword" class="block text-sm font-medium text-gray-700 mb-1">Confirm Password</label>
+                        <div class="relative">
+                            <input 
+                                type="password" 
+                                id="confirmPassword" 
+                                name="repass" 
+                                class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                                placeholder="Confirm your password"
+                                required
+                            >
+                            <button type="button" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 focus:outline-none" id="toggle-confirm-password">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                        <p class="mt-1 text-sm text-red-600 hidden" id="confirmPassword-error">Passwords must match</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input 
+                                type="checkbox" 
+                                id="terms" 
+                                name="terms" 
+                                class="h-4 w-4 text-amber-600 focus:ring-amber-500 border-gray-300 rounded"
+                                required
+                            >
+                        </div>
+                        <div class="ml-3 text-sm">
+                            <label for="terms" class="font-medium text-gray-700">I agree to the <a href="#" class="text-amber-600 hover:text-amber-500">Terms and Conditions</a></label>
+                            <p class="mt-1 text-sm text-red-600 hidden" id="terms-error">You must agree to the terms and conditions</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <button 
+                            type="submit" 
+                            name="submit" 
+                            class="btn-primary w-full bg-amber-600 hover:bg-amber-700  font-bold py-3 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 transition-all"
+                        >
+                            Create Account
+                        </button>
+                    </div>
+                    
+                    <div class="text-center">
+                        <p class="text-sm text-gray-600">
+                            Already have an account? 
+                            <a href="login.php" class="font-medium text-amber-600 hover:text-amber-500">Sign In</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Carousel functionality
+            const carousel = document.getElementById('carousel');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            let currentIndex = 0;
+            
+            function showSlide(index) {
+                // Hide all slides
+                carouselItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Show the selected slide
+                carouselItems[index].classList.add('active');
+                
+                // Update indicators
+                indicators.forEach(indicator => {
+                    indicator.classList.remove('active', 'opacity-100');
+                    indicator.classList.add('opacity-50');
+                });
+                indicators[index].classList.add('active', 'opacity-100');
+                indicators[index].classList.remove('opacity-50');
+                
+                currentIndex = index;
+            }
+            
+            // Auto-advance carousel
+            setInterval(() => {
+                let nextIndex = (currentIndex + 1) % carouselItems.length;
+                showSlide(nextIndex);
+            }, 5000);
+            
+            // Click handlers for indicators
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', () => {
+                    const index = parseInt(indicator.getAttribute('data-index'));
+                    showSlide(index);
+                });
+            });
+            
+            // Form validation
+            const form = document.getElementById('signup-form');
+            const firstName = document.getElementById('firstName');
+            const lastName = document.getElementById('lastName');
+            const email = document.getElementById('email');
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirmPassword');
+            const terms = document.getElementById('terms');
+            
+            // Toggle password visibility
+            const togglePassword = document.getElementById('toggle-password');
+            const toggleConfirmPassword = document.getElementById('toggle-confirm-password');
+            
+            togglePassword.addEventListener('click', function() {
+                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+                this.querySelector('i').classList.toggle('fa-eye');
+                this.querySelector('i').classList.toggle('fa-eye-slash');
+            });
+            
+            toggleConfirmPassword.addEventListener('click', function() {
+                const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+                confirmPassword.setAttribute('type', type);
+                this.querySelector('i').classList.toggle('fa-eye');
+                this.querySelector('i').classList.toggle('fa-eye-slash');
+            });
+            
+            // Form validation
+            form.addEventListener('submit', function(event) {
+                let isValid = true;
+                
+                // First Name validation
+                if (!firstName.value.trim()) {
+                    document.getElementById('firstName-error').classList.remove('hidden');
+                    firstName.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    document.getElementById('firstName-error').classList.add('hidden');
+                    firstName.classList.remove('border-red-500');
+                }
+                
+                // Last Name validation
+                if (!lastName.value.trim()) {
+                    document.getElementById('lastName-error').classList.remove('hidden');
+                    lastName.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    document.getElementById('lastName-error').classList.add('hidden');
+                    lastName.classList.remove('border-red-500');
+                }
+                
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email.value.trim() || !emailRegex.test(email.value.trim())) {
+                    document.getElementById('email-error').classList.remove('hidden');
+                    email.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    document.getElementById('email-error').classList.add('hidden');
+                    email.classList.remove('border-red-500');
+                }
+                
+                // Password validation
+                if (!password.value) {
+                    document.getElementById('password-error').classList.remove('hidden');
+                    password.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    document.getElementById('password-error').classList.add('hidden');
+                    password.classList.remove('border-red-500');
+                }
+                
+                // Confirm Password validation
+                if (password.value !== confirmPassword.value) {
+                    document.getElementById('confirmPassword-error').classList.remove('hidden');
+                    confirmPassword.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    document.getElementById('confirmPassword-error').classList.add('hidden');
+                    confirmPassword.classList.remove('border-red-500');
+                }
+                
+                // Terms validation
+                if (!terms.checked) {
+                    document.getElementById('terms-error').classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    document.getElementById('terms-error').classList.add('hidden');
+                }
+                
+                if (!isValid) {
+                    event.preventDefault();
+                }
+            });
+            
+            // Input event listeners to clear errors on typing
+            const inputs = [firstName, lastName, email, password, confirmPassword];
+            inputs.forEach(input => {
+                input.addEventListener('input', function() {
+                    const errorId = this.id + '-error';
+                    document.getElementById(errorId).classList.add('hidden');
+                    this.classList.remove('border-red-500');
+                });
+            });
+            
+            terms.addEventListener('change', function() {
+                if (this.checked) {
+                    document.getElementById('terms-error').classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
