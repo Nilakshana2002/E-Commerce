@@ -264,6 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
   </section>
 
+
   <!-- Categories Section -->
   <section class="py-12 bg-white">
       <div class="container mx-auto px-4">
@@ -540,6 +541,9 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
   </section>
 
+
+
+  
   <!-- Why Choose Us Section -->
   <section class="py-12 bg-white">
       <div class="container mx-auto px-4">
@@ -676,6 +680,10 @@ document.addEventListener("DOMContentLoaded", () => {
   </section>
 
 
+
+
+
+
   <!-- Newsletter Section -->
   <section class="py-12 bg-amber-700 text-black">
       <div class="container mx-auto px-4">
@@ -737,6 +745,105 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
   </section>
 
+<!-- Promo Banners (Tailwind) -->
+<section class="py-5">
+  <div class="max-w-6xl mx-auto">
+    <div id="promoCarousel" class="relative overflow-hidden">
+
+      <!-- Slides wrapper -->
+      <div class="flex transition-transform duration-700 ease-in-out" data-slides>
+        <!-- Slide 1 -->
+        <div class="min-w-full flex gap-2" data-slide>
+          <div class="flex-1 rounded overflow-hidden shadow promo-banner">
+            <img src="../main/images/assets/1.jpg" alt="Promo 1" class="w-full h-full object-cover">
+          </div>
+          <div class="flex-1 rounded overflow-hidden shadow promo-banner">
+            <img src="../main/images/assets/2.jpg" alt="Promo 2" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="min-w-full flex gap-4" data-slide>
+          <div class="flex-1 rounded overflow-hidden shadow promo-banner">
+            <img src="../main/images/assets/3.jpg" alt="Promo 3" class="w-full h-full object-cover">
+          </div>
+          <div class="flex-1 rounded overflow-hidden shadow promo-banner">
+            <img src="../main/images/assets/1.jpg" alt="Promo 4" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="min-w-full flex gap-4" data-slide>
+          <div class="flex-1 rounded overflow-hidden shadow promo-banner">
+            <img src="../main/images/assets/2.jpg" alt="Promo 5" class="w-full h-full object-cover">
+          </div>
+          <div class="flex-1 rounded overflow-hidden shadow promo-banner">
+            <img src="../main/images/assets/3.jpg" alt="Promo 1" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Prev / Next controls -->
+      <button class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-3 rounded-full text-white"
+              data-prev>
+        &#10094;
+      </button>
+      <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-3 rounded-full text-white"
+              data-next>
+        &#10095;
+      </button>
+
+      <!-- Indicators -->
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2" data-dots>
+        <button class="h-2 w-2 rounded-full bg-white/80 ring-1 ring-white data-[active=true]:bg-amber-600"
+                data-dot="0"></button>
+        <button class="h-2 w-2 rounded-full bg-white/80 ring-1 ring-white data-[active=true]:bg-amber-600"
+                data-dot="1"></button>
+        <button class="h-2 w-2 rounded-full bg-white/80 ring-1 ring-white data-[active=true]:bg-amber-600"
+                data-dot="2"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Fixed height for all promo banners */
+.promo-banner { height: 200px; }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel   = document.getElementById('promoCarousel');
+  const track      = carousel.querySelector('[data-slides]');
+  const slides     = [...track.querySelectorAll('[data-slide]')];
+  const dots       = [...carousel.querySelectorAll('[data-dot]')];
+  const prevBtn    = carousel.querySelector('[data-prev]');
+  const nextBtn    = carousel.querySelector('[data-next]');
+  let index = 0, interval;
+
+  const goTo = i => {
+    index = (i + slides.length) % slides.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach((d, k) => d.dataset.active = k === index);
+  };
+
+  const next = () => goTo(index + 1);
+  const start = () => interval = setInterval(next, 2000);
+  const stop  = () => clearInterval(interval);
+
+  nextBtn.onclick = () => { stop(); next(); start(); };
+  prevBtn.onclick = () => { stop(); goTo(index - 1); start(); };
+  dots.forEach((d, i) => d.onclick = () => { stop(); goTo(i); start(); });
+
+  carousel.addEventListener('mouseenter', stop);
+  carousel.addEventListener('mouseleave', start);
+
+  goTo(0);
+  start();
+});
+</script>
+
+  
 
 
 
@@ -751,3 +858,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+<?php //include '../Cart/popup-advertisement.php'; ?>
