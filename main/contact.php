@@ -1,6 +1,45 @@
 <?php
 session_start();
 ?>
+<?php
+// Enable error reporting
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+// DB connection
+$host = "localhost";
+$username = "root";
+$password = "Nilakshana_123@";
+$database = "sweet_delights";
+
+$conn = new mysqli($host, $username, $password, $database);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Handle form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
+    $name = htmlspecialchars(trim($_POST['name']));
+    $email = htmlspecialchars(trim($_POST['email']));
+    $subject = htmlspecialchars(trim($_POST['subject']));
+    $message = htmlspecialchars(trim($_POST['message']));
+
+    $stmt = $conn->prepare("INSERT INTO user_feedback (name, email, subject, message) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $name, $email, $subject, $message);
+
+    if ($stmt->execute()) {
+        echo "<p style='color: green;'>Thank you! Your message has been received.</p>";
+    } else {
+        echo "<p style='color: red;'>Error: " . $stmt->error . "</p>";
+    }
+
+    $stmt->close();
+}
+
+$conn->close();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,7 +128,11 @@ session_start();
                       </div>
                   </div>
                   <div class="text-center">
-                      <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-8 rounded-md transition">Send Message</button>
+                      <!--<button type="submit" class="bg-green-600 hover:bg-amber-700 text-white font-medium py-3 px-8 rounded-md transition">Send Message</button>-->
+                      <button type="submit" name="submit" class="bg-green-600 hover:bg-amber-700 text-white font-medium py-3 px-8 rounded-md transition">
+    Send Message
+</button>
+
                   </div>
               </form>
           </div>
