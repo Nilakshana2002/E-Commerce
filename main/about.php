@@ -144,5 +144,7 @@ session_start();
             });
         });
     </script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.5/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/05/21/06/20250521060615-UDQI6H73.js"></script>
 </body>
 </html>
