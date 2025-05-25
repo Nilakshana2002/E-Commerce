@@ -1,6 +1,44 @@
 <?php
 session_start();
 ?>
+<?php
+// Show errors
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+// DB connection
+$host = "localhost";
+$username = "root";
+$password = "Nilakshana_123@";
+$database = "sweet_delights";
+
+$conn = new mysqli($host, $username, $password, $database);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Handle custom cake form submission
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['custom_submit'])) {
+    $name = htmlspecialchars(trim($_POST['name']));
+    $email = htmlspecialchars(trim($_POST['email']));
+    $phone = htmlspecialchars(trim($_POST['phone']));
+    $message = htmlspecialchars(trim($_POST['message']));
+
+    $stmt = $conn->prepare("INSERT INTO custom_cake_requests (name, email, phone, cake_type, size, message) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssss", $name, $email, $phone, $cake_type, $size, $message);
+
+    if ($stmt->execute()) {
+        echo "<p style='color: green;'>Custom cake request submitted successfully!</p>";
+    } else {
+        echo "<p style='color: red;'>Error: " . $stmt->error . "</p>";
+    }
+
+    $stmt->close();
+}
+
+$conn->close();
+?>
+
 <script type="text/javascript">
         var gk_isXlsx = false;
         var gk_xlsxFileLookup = {};
@@ -476,7 +514,10 @@ session_start();
                               <label for="message" class="block text-gray-700 font-medium mb-2">Your Cake Idea</label>
                               <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500" required></textarea>
                           </div>
-                          <button type="submit" class="w-full bg-green-600 hover:bg-amber-700 text-white font-medium py-2 px-4 rounded-md transition">Submit Request</button>
+                          <!--<button type="submit" class="w-full bg-green-600 hover:bg-amber-700 text-white font-medium py-2 px-4 rounded-md transition">Submit Request</button>-->
+                          <button type="submit" name="custom_submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+    Submit Request
+  </button>
                       </form>
                   </div>
                   <div class="bg-amber-50 p-8 flex flex-col justify-center">
@@ -521,5 +562,7 @@ session_start();
   <?php include '../Components/footer.php'; ?>
 
   <script src="script.js"></script>
+  <script src="https://cdn.botpress.cloud/webchat/v2.5/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/05/21/06/20250521060615-UDQI6H73.js"></script>
 </body>
 </html>
